@@ -1,0 +1,30 @@
+﻿.view-cate .grv-item:first-child
+{
+    text-align: center;
+}
+
+.view-cate .grv-item .item:not(:last-child)
+{
+    width: 50px;
+    text-align: center;
+}
+
+.view-cate .grv-item .item.ct-active
+{
+    width: 100px;
+}
+
+.view-cate .grv-item .item:nth-child(5)
+{
+    width: 350px;
+}
+
+.view-cate .grv-item .item:last-child
+{
+    width: calc(100% - 600px);
+}
+
+.view-cate .grv-item .item.catalogname
+{
+    text-align: left;
+}

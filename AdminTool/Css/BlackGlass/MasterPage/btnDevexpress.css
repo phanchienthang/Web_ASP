@@ -1,0 +1,12 @@
+﻿.cssNapLai
+{
+ background-image:url('Css/Glass/Images/button/refresh-icon.png');
+ height:15px;
+ max-height:15px;
+}
+.cssThemNhomHang,.cssThemHang
+{
+ background-image:url('Css/Glass/Images/button/add_f2.png');
+ height:15px;
+ max-height:15px;
+}

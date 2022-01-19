@@ -1,0 +1,199 @@
+.table
+{
+	margin-bottom: 0;
+}
+
+._content_EditorCss
+{
+	display: inline-block;
+	width: 30%;
+	margin-right: 10%;
+}
+
+._name_EditorCss
+{
+	text-align: left;
+}
+
+._span_text, ._span_link, ._span_combolist, ._span_color
+{
+	width: 100%;
+}
+
+	._span_text input, ._span_combolist select, ._span_color input
+	{
+		width: inherit;
+		max-width: inherit;
+	}
+
+.table > tbody > tr > td
+{
+	vertical-align: middle;
+}
+
+.picker
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*width: 70px;
+            height: 20px;*/
+	/*border-right:20px solid green;*/
+	line-height: 20px;
+	padding: 1px 0 1px 5px;
+}
+
+._content_EditorCss
+{
+	padding: 3px 0;
+}
+
+._name_EditorCss, ._span_text, ._span_link, ._span_combolist, ._span_color
+{
+	display: inline-block;
+}
+
+._name_EditorCss
+{
+	padding-right: 15px;
+	min-width: 130px;
+}
+
+._span_link
+{
+	position: relative;
+}
+
+	._span_link ._hef_link
+	{
+		width: 100%;
+		padding-right: 27px;
+	}
+
+._span_combolist
+{
+}
+
+	._span_combolist select
+	{
+		padding: 5px 0;
+	}
+
+._span_color
+{
+	/*height: auto;
+            width: auto;*/
+	border: 1px solid #C2C2C2;
+	/*padding-left: 5px;*/
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th
+{
+	background-color: #E1F0DB;
+}
+
+._get_linkimg
+{
+	background-image: url('../img/add_picture.png');
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	width: 24px;
+	outline: none;
+	position: absolute;
+	height: 24px;
+	top: 1px;
+	right: 1px;
+	z-index: 9999;
+	text-indent: 24px;
+}
+
+.btn.btn-success, .btn.btn-info, .btn.btn-danger
+{
+	margin: 2px;
+}
+
+@media only screen and (max-width: 1024px)
+{
+	._content_EditorCss
+	{
+		display: block;
+		width: auto;
+		margin-right: 0;
+	}
+
+	._name_EditorCss
+	{
+		text-align: left;
+	}
+
+	._span_text, ._span_link, ._span_combolist, ._span_color
+	{
+		width: 100%;
+	}
+
+		._span_text input, ._span_combolist select, ._span_color input
+		{
+			width: inherit;
+			max-width: inherit;
+		}
+}
+
+@media only screen and (max-width: 768px)
+{
+	table.responsive td:first-child, table.responsive td:first-child, table.responsive.pinned td
+	{
+		display: table-cell !important;
+		white-space: normal;
+	}
+
+	._name_EditorCss
+	{
+		text-align: left;
+	}
+
+	._content_EditorCss, ._name_EditorCss
+	{
+		display: block;
+	}
+
+	._span_link ._hef_link
+	{
+		min-width: inherit;
+		/*width:120px*/
+	}
+
+	._span_link, ._span_color, ._span_text, ._span_combolist
+	{
+		width: 100%;
+	}
+
+		._span_color input, ._span_text input, ._span_combolist select, ._span_link ._hef_link
+		{
+			width: inherit;
+			max-width: inherit;
+		}
+}
+
+@media only screen and (max-width: 540px)
+{
+	.table
+	{
+		width: auto;
+		max-width: inherit;
+	}
+
+		.table > tbody > tr > td
+		{
+			padding: 0;
+		}
+
+	table.responsive td, table.responsive th
+	{
+		white-space: normal !important;
+	}
+}
+/*table._styles
+        {
+            width:1200px; overflow:auto
+        }*/

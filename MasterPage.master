@@ -1,0 +1,316 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_ajoanszq" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%-- Remove error parse --%>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link href="/css/cssHandler.min.css" rel="stylesheet" />
+    <script src="/js/jquery1.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+<body id="_body">
+    <form id="form1" runat="server">
+        <div>
+            <%-- back-to-top button --%>
+            <div id="back-top">
+                <a href="#top"><span></span></a>
+            </div>
+
+
+
+         
+
+            <%-- header --%>
+            <div id="header">
+                <div class="col12">
+                    <div class="top-header">
+                        <div class="mainpage">
+                            <ul class="_social">
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" title="Facebook">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" title="Facebook">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" rel="nofollow" title="LinkedIn">
+                                        <i class="fa fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" title="Facebook">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>|</li>
+                                <li>
+                                    <a href="nguyenbathanh88888@gmail.com"><i class="fa fa-envelope"></i><span class="_email_head">nguyenbathanh88888@gmail.com</span></a>
+                                </li>
+                            </ul>
+                            <ul class="group_head">
+                                <li><a class="_signin"><i class="fa fa-user-plus"></i>Đăng nhập</a></li>
+                                <li><a class="_signup"><i class="fa fa-sign-in"></i>Đăng ký</a></li>
+                            </ul>
+
+
+                            <div id="_user">
+                                <div class="_user-modal">
+                                    <div class="_user-modal-container">
+                                        <ul class="_switcher">
+                                            <li><a>Đăng nhập</a></li>
+                                            <li><a>Đăng ký</a></li>
+                                        </ul>
+                                        <div id="_login">
+                                            <div class="_form">
+                                                <p>
+                                                    <label class="_lbl_user" for="signin-email">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </label>
+                                                    <input id="signin-email" type="email" placeholder="Nhập E-mail" />
+                                                    <span class="_error-message"></span>
+                                                </p>
+
+                                                <p>
+                                                    <label class="_lbl_user" for="signin-password">
+                                                        <i class="fa fa-lock"></i>
+                                                    </label>
+                                                    <input id="signin-password" type="password" placeholder="Nhập mật khẩu" />
+                                                    <span class="_error-message"></span>
+                                                    <a class="hide-password">Hiện</a>
+                                                </p>
+
+                                                <p>
+                                                    <input type="checkbox" id="remember-me" checked="checked" />
+                                                    <label for="remember-me">Ghi nhớ đăng nhập</label>
+                                                </p>
+
+                                                <p>
+                                                    <input type="submit" value="Đăng nhập" />
+                                                </p>
+                                            </div>
+
+                                            <p class="_form-bottom-message"><a>Quên mật khẩu?</a></p>
+                                        </div>
+                                        <div id="_signup">
+                                            <div class="_form">
+                                                <p>
+                                                    <label class="_lbl_user" for="signup-username">
+                                                        <i class="fa fa-user"></i>
+                                                    </label>
+                                                    <input id="signup-username" type="text" placeholder="Nhập tên hiển thị" />
+                                                    <span class="_error-message"></span>
+                                                </p>
+
+                                                <p>
+                                                    <label class="_lbl_user" for="signup-email">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </label>
+                                                    <input id="signup-email" type="email" placeholder="Nhập E-mail" />
+                                                    <span class="_error-message"></span>
+                                                </p>
+
+                                                <p>
+                                                    <label class="_lbl_user" for="signup-password"><i class="fa fa-lock"></i></label>
+                                                    <input id="signup-password" type="password" placeholder="Nhập mật khẩu" />
+                                                    <span class="_error-message"></span>
+                                                    <a class="hide-password">Hiện</a>
+                                                </p>
+
+                                                <p>
+                                                    <input type="checkbox" id="accept-terms" />
+                                                    <span class="_error-message"></span>
+                                                    <label for="accept-terms">Đồng ý với <a>điều khoản</a></label>
+                                                </p>
+
+                                                <p>
+                                                    <input type="submit" value="Tạo tài khoản" />
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <div id="_reset-password">
+                                            <p class="_form-message">Quên mật khẩu? Nhập email lúc đăng ký để lấy lại mật khẩu.</p>
+
+                                            <div class="_form">
+                                                <p>
+                                                    <label class="_lbl_user" for="reset-email">
+                                                        <i class="fa fa-envelope"></i>
+                                                    </label>
+                                                    <input id="reset-email" type="email" placeholder="E-mail" />
+                                                    <span class="_error-message">Sửa lỗi để tiếp tục!</span>
+                                                </p>
+
+                                                <p>
+                                                    <input type="submit" value="Tiếp tục" />
+                                                </p>
+                                            </div>
+
+                                            <p class="_form-bottom-message"><a href="#0">Quay lại</a></p>
+                                        </div>
+                                        <a href="#0" class="_close-form">X</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="header">
+                                <a href="/thanhcong.aspx" onclick="setTitle('Công ty TNHH Thành Công | Trang chủ')">
+                                    <img style="width:100px; height:100px" src="/images/logo-bs-w.png" alt="" title="Công ty TNHH Thành Công" />
+                                </a>
+                            </div>
+                            <p style="color:Highlight"><b>Nhóm 13 lập trình web</b></p>
+
+                            <script type="text/javascript">
+                                $(function () {
+                                    var availableTags = [ <%= SuggestionList %>];
+                                    var selectedOption = "";
+                                    $("#<%= txtSearch.ClientID%>").autocomplete({
+                                        minLength: 0,
+                                        source: availableTags,
+                                        focus: function (event, ui) {
+                                            $("#<%= txtSearch.ClientID%>").val(ui.item.label);
+                                            return false;
+                                        },
+
+                                        select: function (event, ui) {
+                                            $("#<%= txtSearch.ClientID%>").val(ui.item.label);
+                                            window.location.href = ui.item.value;
+                                            selectedOption = ui.item.value;
+                                            return false;
+                                        }
+                                    });
+                                });
+                            </script>
+                            <div class="menu">
+                                <a class="toggleMenu" href="#">
+                                    <span>&nbsp;</span>
+                                    <span>&nbsp;</span>
+                                    <span>&nbsp;</span>
+                                </a>
+                                <ul id="nav" class="nav">
+                                    <li>
+                                        <a href="/thanhcong.aspx">trang chủ</a>
+                                    </li>
+                                    <li>
+                                        <a href="/ve-chung-toi.aspx">về chúng tôi</a>
+                                    </li>
+                                    <li>
+                                        <a  href="/san-pham.aspx">sản phẩm</a>
+                                    </li>
+                                    <li>
+                                        <a href="/tin-tuc.aspx">tin tức</a>
+                                    </li>
+                                    <li>
+                                        <a href="/lien-he.aspx">liên hệ</a>
+                                    </li>
+                                    <li>
+                                        <div class="search">
+                                            <asp:TextBox ID="txtSearch" runat="server" CssClass="search-text" placeholder="Nhập từ khóa tìm kiếm"></asp:TextBox>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col12">
+                    <asp:ContentPlaceHolder ID="Banner_Slider" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <%-- content --%>
+            <div class="mainpage">
+                <div id="content">
+                    <%-- content left --%>
+                    <div class="content-left" id="content_left">
+                        <asp:ContentPlaceHolder ID="Left" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <%-- content main --%>
+                    <div class="contain-main" id="content_main">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <%-- content right --%>
+                    <div class="content-right" id="content_right">
+                        <asp:ContentPlaceHolder ID="Right" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+
+            <%-- footer --%>
+            <div id="footer" class="col12">
+                <div class="footer-site">
+                    <div class="mainpage">
+                        <div class="col4">
+                            <div class="slogan">
+                                <div class="cate">
+                                    <a href="/">
+                                        <img style="height:80px; width:80px" src="/images/logo-bs-w.png" alt="" />
+                                    </a>
+                                </div>
+                                <div>
+                                    Trung tâm cung cấp phần cứng laptop và PC lớn nhất khu vực Nghệ An.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div>
+                                <div class="cate">Liên hệ</div>
+                                <div class="infor">
+                                    <div><i class="fa fa-map-marker"></i>182 Lê Duẩn - P. Trường Thi - TP.Vinh</div>
+                                    <div><i class="fa fa-phone"></i>Phone: 0988838275 - 0987654321</div>
+                                    <div><i class="fa fa-envelope"></i>Email: <a href="mailto:nguyenbathanh88888@gmail.com">nguyenbathanh88888@gmail.com</a></div>
+                                    <div><i class="fa fa-home"></i>Website: <a href="/">thanhcong.com.vn</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col4">
+                            <div>
+                                <div class="cate">Tìm chúng tôi trên</div>
+                                <ul class="_social">
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" title="Facebook">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" title="Facebook">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" rel="nofollow" title="LinkedIn">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=100069869871533" target="_blank" title="Facebook">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                        <a href="mailto:nguyenbathanh88888@gmail.com" class="author">Nhóm 13 lập trình web trường đại học Vinh</a>
+                </div>
+            </div>
+           
+        </div>
+    </form>
+</body>
+</html>

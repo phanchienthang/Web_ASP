@@ -1,0 +1,197 @@
+﻿/*Định nghĩa tagmenu - từng tab động khi click vào menu
+--------------------------------------------------------------------------------------------------------------*/
+.divButton
+{
+	background-color:#e8edf1; border:1px solid #000000; border-bottom-width:0px ; z-index:9999; padding:2px 0px 0px 0px;
+}
+.tagmenu {padding:2px 0 0 2em; margin:0; list-style:none; height:25px; position:relative; 
+          background:transparent url('') repeat-x left bottom; font-size:11px;}
+.tagmenu li {float:left; height:25px;margin-top: 0px; margin-right:5px;}
+.tagmenu li a:hover,.tagmenu li a 
+	{display:block; float:left; height:25px; line-height:25px; color:#296e8d; font-weight:bold;
+	text-decoration:none; font-family:arial, verdana, sans-serif; font-size:12px; text-align:center; 
+	padding:0 0px 0 0px; cursor:pointer; 
+	}
+/*.tagmenu li a:hover,.tagmenu li a {float:left; display:block; padding:0 5px 0px 5px; }*/
+.tagmenu li a b
+{
+	text-shadow: 0px 0px 0px #fffc00, 1px 1px 0px #bbbbbb;
+	color:#4986A2;
+}
+.tagmenu li.current a b
+{
+	/*text-shadow: 0px 2px 3px #555; */
+	text-shadow: 0px 0px 0px #fffc00, 1px 1px 0px #bbbbbb;
+	font-size:13px;
+	color:#FF0000;
+}
+.tagmenu li img
+{
+	float:left;
+}
+.tagmenu li a.TabContentLeft
+{
+	background:url('Css/BlackGlass/Public/Images/pro_five_l.gif') no-repeat right top;
+	width:4px;
+	height:25px;
+}
+.tagmenu li a.TitleSubContent
+{
+	 background:url('Css/BlackGlass/Public/Images/pro_five_c.gif') repeat-x right top;
+	 /* background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#e2e2e2)); */
+	
+	 /* background-color: #819bcb;
+	 background-image: -webkit-gradient(linear, left top, left bottom, from(#819bcb), to(#536f9d));
+	 background-image: -webkit-linear-gradient(top, #819bcb, #536f9d);
+	 background-image: -moz-linear-gradient(top, #819bcb, #536f9d);
+	 background-image: -ms-linear-gradient(top, #819bcb, #536f9d);
+	 background-image: -o-linear-gradient(top, #819bcb, #536f9d);
+	 background-image: linear-gradient(to bottom, #819bcb, #536f9d);
+	 */
+	padding:0px 4px 0x 2px;
+	padding-right:8px;
+	
+}
+.tagmenu li a.TabContentRight
+{
+	background:url('Css/BlackGlass/Public/Images/pro_five_r.gif') no-repeat right top;
+	width:15px;
+	height:25px;
+}
+.tagmenu li a.TabContentRight img
+{
+	padding-top:2px;
+}
+.tagmenu li.current a.TabContentRight img
+{
+	padding-top:0px;
+}
+.tagmenu li.current a:hover,.tagmenu li.current a ,.tagmenu li.current,.tagmenu li.current a.TitleSubContent
+{	color:#FFFFFF; margin-top:2px; z-index:999999; background:#e8edf1 url('') 0px 0px; line-height:18px;
+	font-size:13px;
+	border-top:0px solid #00000;
+}
+.tagmenu li.current
+{	border:1px solid #000000;
+ 	border-bottom:0px solid #7EACB1;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; }
+/*.tagmenu li.current a:hover b,.tagmenu li.current a b {background:url(../Images/tag_submenu/pro_five_2b.gif) no-repeat right top;}
+.tagmenu li a:hover {color:#34428b; background: url(../Images/tag_submenu/pro_five_1a.gif) no-repeat;}
+.tagmenu li a:hover b {background:url(../Images/tag_submenu/pro_five_1b.gif) no-repeat right top;} 
+.tagmenu li.current a:hover {color:#000; background: url(../Images/tag_submenu/pro_five_2a.gif) no-repeat; cursor:default;}
+.tagmenu li.current a:hover b {background:url(../Images/tag_submenu/pro_five_2b.gif) no-repeat right top;}*/
+
+/*.tagmenu li a:active {background:url(../Images/tag_submenu/pro_five_2a.gif) no-repeat;}
+.tagmenu li a:visited {background:url(../Images/tag_submenu/pro_five_2a.gif) no-repeat;}*/
+
+.tabcontent
+{}
+.tagmenu li img.imgClose
+{
+	height:14px;
+	width:14px;
+	position:absolute;
+	top:5px;
+	right:5px;
+}
+/*
+.tagmenu {padding:5px 0 0 1em; margin:0; list-style:none; height:40px; position:relative; background:transparent url(../Images/tag_submenu/pro_five_0c.gif) repeat-x left bottom; font-size:11px;}
+.tagmenu li {float:left; height:40px; margin-right:1px;}
+.tagmenu li a {display:block; float:left; height:40px; line-height:35px; color:#333; text-decoration:none; font-family:arial, verdana, sans-serif;font-size:12px; font-weight:bold; text-align:center; padding:0 0 0 4px; cursor:pointer; background:url(../Images/tag_submenu/pro_five_0a.gif) no-repeat;}
+.tagmenu li a b {float:left; display:block; padding:0 16px 5px 12px; background:url(../Images/tag_submenu/pro_five_0b.gif) no-repeat right top;}
+.tagmenu li.current a {color:#002095; background:url(../Images/tag_submenu/pro_five_2a.gif) no-repeat;}
+.tagmenu li.current a b {background:url(../Images/tag_submenu/pro_five_2b.gif) no-repeat right top;}
+.tagmenu li a:hover {color:#002095; background: url(../Images/tag_submenu/pro_five_1a.gif) no-repeat;}
+.tagmenu li a:hover b {background:url(../Images/tag_submenu/pro_five_1b.gif) no-repeat right top;}
+.tagmenu li.current a:hover {color:#000; background: url(../Images/tag_submenu/pro_five_2a.gif) no-repeat; cursor:default;}
+.tagmenu li.current a:hover b {background:url(../Images/tag_submenu/pro_five_2b.gif) no-repeat right top;}
+
+.tagmenu li a:active {background:url(../Images/tag_submenu/pro_five_2a.gif) no-repeat;}
+.tagmenu li a:visited {background:url(../Images/tag_submenu/pro_five_2a.gif) no-repeat;}	*/
+
+.tagmenu li.Tabmini a:hover,.tagmenu li.Tabmini a ,.tagmenu li.Tabmini,.tagmenu li.Tabmini a.TitleSubContent
+	{color:#0000FF; margin-top:2px; z-index:999999; background:#EDF3F4 url('') 0px 0px; line-height:18px;}	
+.tagmenu li.Tabmini
+{	
+	border:1px solid #7EACB1;
+ 	border-bottom:0px solid #7EACB1;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+/* tagTitle những popup Danh mục Cho Thuê
+-----------------------------------------------------------------------------------------------------*/
+
+.tagmenu li.Tabmini_ChoThue a:hover,.tagmenu li.Tabmini_ChoThue a ,.tagmenu li.Tabmini_ChoThue,.tagmenu li.Tabmini_ChoThue a.TitleSubContent
+{
+	color:#FFED18; margin-top:0px; z-index:999999; 
+	background:#EDF3F4 url(Images/bg_tagmenu.jpg) 0px 0px; line-height:22px;
+}
+.tagmenu li.Tabmini_ChoThue
+{	
+	border:0px solid #7EACB1;
+ 	border-bottom:0px solid #7EACB1;
+	-webkit-border-top-left-radius: 2px;
+	-webkit-border-top-right-radius: 2px;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	width:100%;
+	height:20px;
+	margin-top:0px;
+}
+.tagmenu.ulChoThue
+{
+	padding: 0px; margin-top: 0px; height:15px; border:0px solid #ff0000; width:100%;
+}
+.tagmenu li a.TabContentLeft_ChoThue
+{
+	background:url() no-repeat right top;
+	width:4px;
+	height:20px;
+}
+.tagmenu li a.TitleSubContent_ChoThue
+{
+	background:url() repeat-x right top;
+	margin-right:15px;
+	padding-left: 7px;
+	padding-right: 0; 
+	font-weight:bold;	
+}
+.tagmenu li a.TitleSubContent_ChoThue b{color:#FFFFFF}
+.tagmenu li a.TabContentRight_ChoThue
+{
+	background:url() no-repeat right top;
+	width:15px;
+	height:20px;
+}
+.tagmenu_border
+{
+	width:100%;
+	border:1px solid #4E4F51;
+	border-bottom-width:0px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.tagmenu li.Tabmini_ChoThue:hover a
+{
+	height:20px;
+	opacity:0.9;
+}
+.borderradius
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+/*---------------------------------------------------------------------------------------------------*/

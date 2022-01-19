@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Shojumaru);
+
+.box-inner {
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+    -webkit-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+    -moz-box-shadow: 0 0 10px rgba(189, 189, 189, 0.4);
+}
+
+.box-header {
+    border: none;
+    padding-top: 5px;
+    border-bottom: 1px solid #DEDEDE;
+    border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -moz-border-radius: 3px 3px 0 0;
+    /*height: 35px;*/
+    min-height: 35px !important;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 16px;
+    /*background: url('./images/bg_title.png') repeat;*/
+
+}
+
+.box-header h2 {
+    font-size: 15px;
+    width: auto;
+    clear: none;
+    float: left;
+    line-height: 25px;
+    white-space: nowrap;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.box-header h3 {
+    font-size: 13px;
+    width: auto;
+    clear: none;
+    float: left;
+    line-height: 25px;
+    white-space: nowrap;
+}
+
+.box-header h2 > i {
+    margin-top: 1px;
+}
+
+.box-icon {
+    float: right;
+}
+
+.box-icon a {
+    clear: none;
+    float: left;
+    margin: 0 2px;
+    height: 20px;
+    width: 5px;
+    margin-top: 1px;
+}
+
+.box-icon a i {
+    margin-left: -6px;
+    top: -1px;
+}
+
+.box-content {
+    padding: 10px; 
+}
+.box-content .control-group{padding:5px 0}
+.homepage-box{margin-bottom: 15px;}
+.container{width: 98% !important;}

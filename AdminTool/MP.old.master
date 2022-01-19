@@ -1,0 +1,174 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MP, App_Web_tozlinaj" %>
+
+<%@ Register Src="~/UserControls/PopupLevel1.ascx" TagName="PopupLevel1" TagPrefix="p1" %>
+<!DOCTYPE html>
+<html lang="vi">
+<head runat="server">
+
+    <meta charset="utf-8">
+    <title>System Styles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap-classic.min.css" rel="stylesheet">
+    <link href="css/charisma-app.min.css" rel="stylesheet">
+    <link href="bower_components/responsive-tables/responsive-tables.min.css" rel="stylesheet">
+    <link href="css/noty_theme_default.css" rel="stylesheet">
+    <link href="css/bootstraap-tour.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="js/msgbox/msgbox.min.css" rel="stylesheet">
+    <link href="css/admin-styles.min.css" rel="stylesheet">
+    <link href="css/opa-icons.min.css" rel="stylesheet">
+
+
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="js/jquery-1.7.2.min.js"> </script>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <%-- <script src="js/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>--%>
+
+
+
+
+    <form id="form1" runat="server">
+
+        <!-- topbar starts -->
+
+        <!-- topbar ends -->
+        <div id="wrapper">
+
+            <!-- Sidebar -->
+            <div id="sidebarbg" <%=   getToggedMenu()%>></div>
+            <div id="sidebar" <%=   getToggedMenu()%>>
+                <div class="sidenav sidebar-nav">
+                    <div class="mainnav nav-canvas">
+                        <div class="nav-sm nav nav-stacked">
+                        </div>
+
+                        <ul class="nav nav-stacked main-menu">
+                            <% if (!IsPostBack)
+                               {%>
+                            <%=   CreateMenu()%>
+                            <% }%>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="content" <%=   getToggedMenu()%>>
+                <div class="container">
+                    <asp:ScriptManager runat="server" ID="scriptNapLai">
+                    </asp:ScriptManager>
+                    <div class="row">
+                        <div id="content1" class="col-lg-12 col-sm-12 space-left">
+                            <div>
+                                <ul class="breadcrumb">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><% if (!IsPostBack)
+                                                       {%>
+                                            <%=   TenForm()%>
+                                            <% }%>  </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <script type="text/javascript" async>
+
+                                var FirstLoading = true;
+
+                                var iframe;
+                                function OnPopupInit(s, e) {
+                                    iframe = p1.GetContentIFrame();
+                                    ASPxClientUtils.AttachEventToElement(iframe, 'load', OnContentLoaded);
+                                }
+                                function OnPopupShown(s, e) {
+                                    if (FirstLoading)
+                                        lp.ShowInElement(iframe);
+                                }
+                                function OnContentLoaded(e) {
+                                    FirstLoading = false;
+                                    lp.Hide();
+                                    if (p1.GetContentIFrameWindow().btnLuu) {
+                                        var col_h = CalculateSize_Content();
+                                        p1.GetContentIFrameWindow().setHeightFrame(col_h);
+                                    }
+                                }
+
+
+
+
+
+                                function onLogin() {
+                                    checkNavigate = true;
+                                    window.location.href = 'Login.aspx';
+
+                                }
+                                window.onbeforeunload = function (e) {
+                                    if (!checkNavigate) {
+                                        window.stop();
+                                        return "";
+                                    }
+                                }
+
+
+                            </script>
+
+                            <p1:PopupLevel1 runat="server" ID="pop1"></p1:PopupLevel1>
+
+                            <asp:ContentPlaceHolder ID="C1" runat="server">
+                            </asp:ContentPlaceHolder>
+                            <div style="display: none">
+                                <ul id="menuclickR">
+                                    <ul>
+                                        <li><a href="#" onclick="confirmLogout();">Logout</a></li>
+                                        <li><a href="#" onclick="ShowLockDialog();">Lock Screen</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <!-- content ends -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.fluid-container-->
+
+
+        </div>
+        <script src="js/bootstrap-modal.js"></script>
+        <script src="js/msgbox/msgbox.min.js" type="text/javascript" async></script>
+        <script src="js/MasterPageLoad.js" type="text/javascript" async></script>
+        <script src="js/scrResult.min.js" type="text/javascript" async></script>
+
+        <script src="js/jquery.idle-timer.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function () {
+                //    var timeout = 10000000;
+                var timeout = 3000000;
+                $(document).bind("idle.idleTimer", function () {
+                    // function you want to fire when the user goes idle
+                    // $.timeoutDialog({ timeout: 0.25, countdown: 15, logout_redirect_url: 'http://www.styles.net.vn', restart_on_yes: true });
+                    pcLogin.Show();
+
+                });
+                $(document).bind("active.idleTimer", function () {
+                    // function you want to fire when the user becomes active again
+                });
+                $.idleTimer(timeout);
+            });
+
+            $(function () {
+                setInterval(function () { $.get("KeepAlive.ashx"); }, 1000 * 300); // 30s gửi request một lần
+            });
+            //        var dlsn = getCookie('CurrentUser'); alert(dlsn); if (dlsn == '') { alertTB("Bạn cần phải đăng nhập lại!", onLogin); }
+
+        </script>
+    </form>
+    <asp:PlaceHolder runat="server" ID="phdBottomScripts" />
+</body>
+</html>

@@ -1,0 +1,1111 @@
+﻿/* Reset */
+
+body, form, div, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset,
+p,blockquote
+{ 
+	margin: 0;
+	padding: 0;
+}
+
+fieldset, img 
+{ 
+	border: 0;
+}
+
+ol, ul 
+{
+	list-style: none;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 
+{
+	font-size: 100%;
+	font-weight: normal;
+}
+
+/* Common */
+
+html
+{
+    overflow-y: scroll;
+    height: 100%;
+}
+
+body 
+{        
+    font: 11px Verdana;
+    color: #2f2f2f;
+    background: #2f2f2f;
+    height: 100%;
+}
+
+.TextContent
+{
+	line-height: 14px;
+}
+
+.TextContent p,
+.TextContent ul li,
+.TextContent ol li,
+.TextContent code
+{
+    margin-bottom: 10px;
+}
+
+.TextContent ul,
+.TextContent ol
+{
+	list-style: outside;
+	padding: 0;
+	margin-left: 32px;
+}
+
+.TextContent ul
+{
+	
+	list-style-type: disc;
+}
+
+.TextContent ol
+{
+	list-style-type: decimal;
+}
+
+.TextContent a
+{
+    color: #b71d1d;
+	text-decoration: none;
+}
+
+.TextContent a:hover
+{
+	text-decoration: underline;	
+}
+
+.DemoSprite
+{
+    background-image: url(Sprite.png);
+    background-repeat: no-repeat;
+}
+
+/* Core Layout */
+
+.RightSide
+{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    z-index: -100;
+    background: white;
+}
+
+.LayoutContainer
+{
+    margin: 0 auto;    
+    min-height: 100%;
+    -height: 100%; /* IE6 */
+    text-align: left;
+    width: 1200px;
+    background: url(Back.png) repeat-y left top white;
+}
+
+.LayoutFooterSpacing
+{
+    clear: both;
+    height: 250px; /* footer height + spacing */
+}
+
+.LayoutFooter
+{
+    margin: -220px auto 0;
+    height: 220px;
+    width: 1200px;
+}
+
+.AspForm
+{
+    display: block;
+    height: 100%;
+}
+
+.LayoutLeft
+{
+    float: left;    
+    width: 286px;
+}
+
+.LayoutRight
+{
+    float: left;
+    width: 914px;    
+}
+
+.LayoutLeftInner
+{
+    padding-top: 20px;
+}
+
+.LayoutRightInner
+{
+    padding-left: 60px;
+}
+
+.FooterLeftInner
+{
+    padding-left: 75px;
+    padding-top: 9px;
+}
+
+.FooterRightInner
+{
+    padding-left: 60px;
+}
+
+
+/* Title */
+
+.TitleLogo 
+{
+	height: 63px;	
+}
+
+.TitleLogo img
+{
+    display: block;
+}
+
+/* Navigation bar */
+
+.Navigation
+{
+	padding-left: 67px;
+}
+
+.NavigationBar
+{
+	padding: 0;
+    color: White;    
+}
+
+.NavigationBar .dxnb-header,
+.NavigationBar .dxnb-headerCollapsed,
+.NavigationBar .dxnb-item
+{
+    padding: 2px 0 1px;
+}
+
+.NavigationBar a
+{
+    color: White;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1px 5px 2px;
+    line-height: 15px;
+}
+
+.NavigationBar .dxnb-header a
+{
+    font-weight: bold;
+    cursor: default;
+}
+
+.NavigationBar .dxnb-headerCollapsed a:hover,
+.NavigationBar .dxnb-item a:hover
+{
+    background: white;
+    color: #2f2f2f;
+    zoom: 1; /* IE8 in IE7 mode */
+}
+
+.NavigationBar .dxnb-content
+{
+    padding-left: 19px;
+    padding-right: 12px;
+}
+
+.NavigationBar .dxnb-itemSelected a,
+.NavigationBar .dxnb-itemSelected a:hover
+{
+    background: #b71d1d;
+    color: white;
+    cursor: default;
+}
+
+.NavigationBar .NewImage,
+.NavigationBar .UpdatedImage
+{
+    width: 30px;
+    height: 12px;
+    border: 0;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: -42px;
+}
+
+.NavigationBar .dxnb-item .NewImage,
+.NavigationBar .dxnb-item .UpdatedImage
+{
+    margin-left: -61px;
+}
+
+.NavigationBar .NewImage
+{
+    background-position: -333px -65px;
+}
+
+.NavigationBar .UpdatedImage
+{
+    background-position: -333px -78px;
+}
+
+/* Suite Switcher */
+
+.SuiteSwitcher 
+{    
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.SuiteSwitcher div
+{ 
+    line-height: 35px;
+}
+
+.SuiteSwitcher img 
+{    
+    vertical-align: middle;
+}
+
+.SuiteSwitcher .Title
+{
+    margin-left: 8px;
+}
+
+.SuiteSwitcher a
+{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.SuiteSwitcher a:hover
+{
+    text-decoration: underline;
+}
+
+.Suite_XtraReports,
+.Suite_XtraCharts,
+.Suite_ASPxGridView,
+.Suite_ASPxPivotGrid,
+.Suite_ASPxperience,
+.Suite_ASPxScheduler,
+.Suite_ASPxHtmlEditor,
+.Suite_ASPxGauges,
+.Suite_ASPxTreeList,
+.Suite_ASPxEditors,
+.Suite_ASPxSpellChecker
+{
+    width: 30px;
+    height: 30px;
+}
+
+.Suite_XtraReports
+{
+    background-position: -302px -51px;
+}
+
+.Suite_XtraCharts
+{
+    background-position: -302px -82px;
+}
+
+.Suite_ASPxGridView
+{
+    background-position: -302px -113px;
+}
+
+.Suite_ASPxPivotGrid
+{
+    background-position: -302px -144px;
+}
+
+.Suite_ASPxperience
+{
+    background-position: -302px -175px;
+}
+
+.Suite_ASPxScheduler
+{
+    background-position: -302px -206px;
+}
+
+.Suite_ASPxHtmlEditor
+{
+    background-position: -302px -237px;
+}
+
+.Suite_ASPxGauges
+{
+    background-position: -302px -268px;
+}
+
+.Suite_ASPxTreeList
+{
+    background-position: -302px -299px;
+}
+
+.Suite_ASPxEditors
+{
+    background-position: -302px -330px;
+}
+
+.Suite_ASPxSpellChecker
+{
+    background-position: -302px -361px;
+}
+
+/* Top Buttons */
+
+.TopButtons
+{
+    height: 48px;
+}
+
+.TopButtons .Button,
+.TopButtons .TabsArea
+{
+    float: left
+}
+
+.TopButtons .Button
+{
+    cursor: pointer;    
+    display: block;    
+    margin-left: 1px;
+    background-color: #b71d1d;
+}
+
+.TabControl,
+.TabControl .dxtc-strip,
+.TabControl .dxtc-strip li
+{
+    float: left;
+}
+
+.TabControl .dxtc-text
+{
+    font-weight: normal;
+}
+
+.TabControl a
+{
+    display: block;
+}
+
+.TabControl .dxtc-tab a
+{    
+    background: #b71d1d;    
+}
+
+.TabControl .dxtc-activeTab a
+{    
+    background: #2f2f2f;
+    padding-bottom: 12px;
+}
+
+.TabControl .dxtc-leftIndent,
+.TabControl .dxtc-rightIndent
+{
+    width: 0;
+    font-size: 1px;
+}
+
+.TabControl .dxtc-spacer
+{
+    font-size: 1px;
+}
+
+.TabControl a,
+.TopButtons .Button
+{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 91px;
+    padding: 8px 0 10px;    
+}
+
+.TabControl a:hover,
+.TopButtons .Button:hover
+{
+    background-color: #2f2f2f;
+}
+
+.TopButtons .SelectedButton
+{
+    background-color: #2f2f2f;
+    padding-bottom: 12px;
+}
+
+#AllProductsButton
+{
+    background-position: -417px -143px;
+    padding-left: 22px;
+    width: 104px;
+}
+
+#ThemeSelectorButton
+{
+    background-position: -378px -113px;
+    padding-right: 7px;
+    width: 84px;
+}
+
+#DownloadButton,
+#BuyButton
+{
+    padding-left: 21px;
+}
+
+#DownloadButton
+{
+    background-position: -418px -50px;
+}
+
+#BuyButton
+{
+    background-position: -418px -81px;
+}
+
+/* Theme selector */
+
+.ThemeSelectorPopup,
+.ThemeSelectorPopup.dxpc-mainDiv
+{
+    background: #2f2f2f;
+    color: White;
+    padding: 0 12px;
+}
+
+.ThemeSelectorPopup.dxpc-mainDiv 
+{
+    float: left;
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#ThemesContainer
+{
+    font-size: 16px;
+    padding: 6px 3px 18px;
+    width: 490px;
+}
+
+.ThemeGroupMenu
+{
+    padding-top: 28px;
+}
+
+.ThemeGroupMenu ul
+{
+	padding: 0;
+}
+
+.ThemeGroupMenu li
+{
+	float: left;
+}
+
+.ThemeGroupMenu .dxm-item
+{
+    color: white;
+    cursor: pointer;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    font-style: italic;
+}
+
+.ThemeGroupMenu .dxm-item img
+{
+    margin-bottom: 4px;
+}
+
+.ThemeGroupMenu .dxm-hovered
+{
+    background-color: white;
+    color: #2f2f2f;
+    padding: 5px;
+}
+
+.ThemeGroupMenu .dxm-selected
+{
+    background-color: #b71d1d;    
+    color: White;
+    cursor: default;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.ThemeDefaultImage, 
+.ThemeDevExImage,
+.ThemeMetropolisImage,
+.ThemeOffice2010BlueImage, 
+.ThemeOffice2010BlackImage, 
+.ThemeOffice2010SilverImage,
+.ThemeOffice2003BlueImage, 
+.ThemeOffice2003OliveImage, 
+.ThemeOffice2003SilverImage,
+.ThemeAquaImage, 
+.ThemeGlassImage, 
+.ThemeBlackGlassImage, 
+.ThemePlasticBlueImage, 
+.ThemeRedWineImage, 
+.ThemeSoftOrangeImage, 
+.ThemeYouthfulImage 
+{    
+    width: 150px;
+    height: 50px;
+}
+
+.ThemeDefaultImage
+{
+    background-position: 0 0;
+}
+
+.ThemeOffice2003BlueImage
+{
+    background-position: 0 -51px;
+} 
+
+.ThemeOffice2003OliveImage
+{
+    background-position: 0 -102px;
+} 
+
+.ThemeOffice2003SilverImage
+{
+    background-position: 0 -153px;
+} 
+
+.ThemeYouthfulImage
+{
+    background-position: 0 -204px;
+} 
+
+.ThemePlasticBlueImage
+{
+    background-position: 0 -255px;
+} 
+
+.ThemeGlassImage
+{
+    background-position: 0 -306px;
+} 
+
+.ThemeBlackGlassImage
+{
+    background-position: 0 -357px;
+} 
+
+.ThemeDevExImage
+{
+    background-position: -151px 0;
+}
+
+.ThemeOffice2010BlueImage
+{
+    background-position: -151px -51px;
+} 
+
+.ThemeOffice2010BlackImage
+{
+    background-position: -151px -102px;
+} 
+
+.ThemeOffice2010SilverImage
+{
+    background-position: -151px -153px;
+
+} 
+
+.ThemeAquaImage
+{
+    background-position: -151px -204px;
+} 
+
+.ThemeRedWineImage
+{
+    background-position: -151px -255px;
+} 
+
+.ThemeSoftOrangeImage
+{
+    background-position: -151px -306px;
+}
+
+.ThemeMetropolisImage
+{
+    background-position: -151px -357px;
+}
+
+/* Intro pages */
+
+.IntroVersion
+{
+    padding: 5px 0;
+}
+
+.IntroVersion .Light
+{
+    color: #8d8d8d;
+}
+
+.IntroBannerShadow
+{
+    width: 918px;
+    height: 333px;
+    background: lime;
+    position: absolute;
+    background: url(Shadows.png) no-repeat;
+    margin-left: -32px;
+    margin-top: -3px;
+    z-index: 1;
+}
+
+.IntroBanner
+{
+    border: solid 1px #b2b2b2;
+    padding: 4px;
+    position: relative;
+    background: white;
+    z-index: 2;
+}
+
+.IntroBanner .Grad
+{
+    background: url(BannerGrad.png) repeat-x 0 0;    
+}
+
+.IntroBanner .Left,
+.IntroBanner .Right
+{
+    float: left;
+}
+
+.IntroBanner .Right
+{
+    width: 400px;
+}
+
+.IntroBanner h1
+{
+    padding: 30px 0 18px;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.IntroBanner h3
+{
+    line-height: 20px;
+    font-size: 12px;
+    height: 87px;
+}
+
+.IntroBanner .Link
+{
+    padding: 5px 0 8px 27px;
+}
+
+.IntroBanner .Link a
+{
+    color: #b71d1d;
+	text-decoration: none;
+}
+
+.IntroBanner .Link a:hover
+{
+    text-decoration: underline;
+}
+
+.IntroBanner .LearnLink
+{
+    background-position: -431px -237px;
+}
+
+.IntroBanner .DocLink
+{
+    background-position: -431px -262px;
+}
+
+.IntroBanner .VideoLink
+{
+    background-position: -431px -287px;
+}
+
+/* Intro Featured Demos */
+
+.HilightArea h2
+{
+    font-size: 16px;
+    padding: 43px 0 12px;
+}
+
+.HilightArea .Item
+{
+    float: left;    
+    padding-right: 71px;
+    padding-bottom: 15px;        
+}
+
+.HilightArea .First
+{
+}
+
+.HilightArea .Last
+{
+    padding-right: 0;
+}
+
+.HilightArea .Shadow
+{
+    background: url(Shadows.png) no-repeat -64px -16px;
+    width: 182px;
+    height: 96px;
+    position: absolute;
+    margin-top: -4px;
+    margin-left: -12px;
+    z-index: 1;
+}
+
+.HilightArea .ImageWrap
+{
+    padding: 4px;
+    width: 148px;
+    border: solid 1px #b2b2b2;
+    background: white;
+    position: relative;
+    z-index: 2;
+}
+
+.HilightArea .Item img
+{    
+    width: 148px;
+    height: 78px;
+    display: block;
+}
+
+.HilightArea .Item .Title
+{
+    padding: 10px 0 8px;
+    font: 12px Tahoma;
+    font-weight: bold;
+    text-align: center;
+}
+
+.HilightArea .Item .Title a
+{
+    color: #2f2f2f;
+    text-decoration: none;
+}
+
+/* Intro Main Area */
+
+.IntroArea
+{
+    padding: 28px 0 0;
+}
+
+.IntroArea h2
+{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Intro Features */
+
+.FeaturesArea
+{
+    padding: 11px 0 0;
+}
+
+.FeatureImageArea 
+{
+    float: left;
+    clear: both;
+    width: 41px;    
+}
+.FeatureTextArea
+{
+    float: left;
+    width: 375px;
+}
+.FeatureTextArea h4
+{
+    font-weight: bold;
+    padding: 5px 0;
+}
+.FeatureTextArea div
+{
+    margin-bottom: 20px;
+    margin-right: 31px;
+}
+
+/* Demo pages */
+
+.DemoTitle
+{
+    font-size: 23px;
+    padding: 34px 0 16px;
+}
+
+#DemoArea h1 { font-size: 24px; }
+#DemoArea h2 { font-size: 20px; }
+#DemoArea h3 { font-size: 18px; }
+#DemoArea h4 { font-size: 16px; }
+#DemoArea h5 { font-size: 14px; }
+#DemoArea h6 { font-size: 12px; }
+
+#DemoArea p 
+{
+    margin-bottom: 10px;
+}
+
+#DemoArea .DescriptionTitle
+{
+	clear: both;
+    font-size: 16px;
+    padding: 56px 0 16px;
+}
+
+#DemoArea .settingsList .settingItem
+{
+    margin-bottom: 4px;
+}
+
+/* Event monitor */
+
+.EventLogPanel
+{
+    clear: both;
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.EventListPanel
+{
+	line-height: 200%;
+	float: left;
+	white-space: nowrap;
+}
+
+.EventListPanel input
+{ 
+	vertical-align: middle;
+}
+
+
+#EventLog,
+.EventLog
+{
+	background-color: White;
+	border: solid 1px #9d9d9d;
+	color: Black;
+	font-family: Tahoma, Sans-Serif;
+	font-size: 11px;
+	overflow: auto;
+	padding: 5px;
+	width: 550px;
+	height: 200px;
+	margin-bottom: 8px;
+}
+
+/* Code area */
+
+#CodeArea
+{
+    display: none;    
+}
+
+.CodeNavBar
+{
+	padding: 0;
+}
+
+.CodeNavBar .dxnb-header,
+.CodeNavBar .dxnb-headerCollapsed
+{
+	font-size: 16px;
+}
+
+.CodeNavBar .dxnb-header
+{
+    padding-bottom: 4px;
+}
+
+.CodeNavBar .dxnb-headerCollapsed
+{
+    padding-bottom: 32px;
+}
+
+.CodeNavBar .dxWeb_nbCollapse,
+.CodeNavBar .dxWeb_nbExpand
+{
+	cursor: pointer;
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+    margin-top: 3px;
+    float: left;
+}
+
+.CodeNavBar .CollapseIcon,
+.CodeNavBar .ExpandIcon
+{
+    width: 13px;
+    height: 13px;
+    margin-right: 6px;
+    margin-top: 3px;
+    float: left;
+    cursor: pointer;
+}
+
+.CodeNavBar .CollapseIcon
+{    
+    background-position: -347px -51px;
+}
+
+.CodeNavBar .ExpandIcon
+{
+    background-position: -333px -51px;    
+}
+
+.CodeNavBar .dxnb-header a,
+.CodeNavBar .dxnb-headerCollapsed a
+{
+	text-decoration: none;
+    float: left;
+    color: #2f2f2f;
+}
+
+.CodeNavBar .PopupLinkContainer
+{
+    float: right;
+    font-size: 11px;
+    color: #b71d1d;
+    cursor: pointer;
+    padding-top: 2px;
+}
+
+.CodeNavBar .PopupLinkContainer:hover
+{
+    text-decoration: underline;
+}
+
+.CodeNavBar .dxnb-content
+{    
+    background: #efefef;
+    max-height: 360px;
+    overflow: auto;
+    margin-bottom: 34px;
+    padding: 25px;
+    white-space: nowrap;
+    font-family: Courier New, Monospace;
+    font-size: 11px;
+}
+
+/* Footer */
+
+.FooterLogo
+{
+    width: 153px; 
+    height: 49px; 
+    background-position: -302px 0;
+}
+
+.LayoutFooter .Version
+{
+	font-size: 17px;
+}
+
+.LayoutFooter a
+{
+	color: #b71d1d;
+	text-decoration: none;
+}
+
+.LayoutFooter a:hover
+{
+	text-decoration: underline;	
+}
+
+.LayoutFooter .Copyright
+{
+    margin-top: 20px;
+}
+
+
+/* Aux */
+
+.Clear
+{
+    display: block;    
+    clear: both;
+    overflow: hidden;
+    width: 1px;
+    height: 0;
+}
+
+.LeftPadding
+{
+    padding-left: 12px;
+}
+
+.TopPadding 
+{
+    padding-top: 6px;
+}
+
+.BottomPadding
+{
+    padding-bottom: 6px;
+}
+
+.TopMargin 
+{
+    margin-top: 6px;
+}
+
+.BottomMargin 
+{
+    margin-bottom: 6px;
+}
+
+.Note 
+{
+    margin: 10px 0;
+}
+
+div.Spacer 
+{
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+}
+
+.NoWrap { 
+    white-space: nowrap; 
+}
+
+.NoBorder {
+	border-style: none !important;
+}
+

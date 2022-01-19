@@ -1,0 +1,35 @@
+﻿th
+{
+	text-align:left;
+	height:29px;
+	font-weight:normal;
+}
+/*td{ text-align:left;}*/
+td.text_left{text-align:left;}
+td.text_right{text-align:right;}
+td.text_center{text-align:center;}
+td.text_bold{font-weight:bold}
+th.text_bold{font-weight:bold}
+.text_right{text-align:right;}
+.dev_divForm .div_borderKT_TonKho
+{
+	width:99.8%;
+	height:120px;
+	margin:5px auto 5px auto;
+	border: 1px solid #CCCCCC; 
+	/* -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	*/
+	padding:0px 0px 10px 0px;
+}
+.border_KiemTra
+{
+	/*width:520px;*/
+	height:auto;
+	width:100%;
+	border: 1px solid #CCCCCC; 
+	/*-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;*/
+	padding:0px 0px 10px 0px;
+}

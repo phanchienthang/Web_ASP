@@ -1,0 +1,50 @@
+﻿
+.calendar
+{
+    border: 1px solid #ebebeb;
+    background-color: #fbfbfb;
+    width: 100%;
+    height: auto;
+}
+
+
+    .calendar tbody > tr:first-child
+    {
+        display: none;
+    }
+
+    .calendar tbody > tr:nth-child(2)
+    {
+        color: #08c;
+        border: 1px solid #ebebeb;
+    }
+
+    .calendar tbody > tr:not(:nth-child(2))
+    {
+        font-weight: 300;
+    }
+
+    .calendar .cld-other-day a
+    {
+        color: #cecece !important;
+    }
+
+    .calendar .cld-today
+    {
+        background-color: #08c;
+    }
+
+        .calendar .cld-today a
+        {
+            color: #fff !important;
+        }
+
+    .calendar .cld-select-day
+    {
+        background-color: #ebebeb !important;
+    }
+
+        .calendar .cld-select-day a
+        {
+            color: #333 !important;
+        }

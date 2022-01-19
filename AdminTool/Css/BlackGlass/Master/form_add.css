@@ -1,0 +1,128 @@
+﻿.form_add
+{
+	width:100%;
+	height:auto;
+	/*	background-color:Olive; */
+	margin:0 auto;
+	padding-top:0px;
+	padding-bottom:5px;	
+	overflow:hidden;
+}
+.form_add .div_border98
+{
+	width:98%;
+	height:auto;
+	margin:0px auto;
+	border: 0px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px 5px 5px 5px;
+	overflow:hidden;
+}
+.form_add .div_border98
+{
+	width:97%;
+	height:auto;
+	margin:0px auto;
+	border: 0px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px 5px 5px 5px;
+	overflow:hidden;
+}
+.form_add .div_border40
+{
+	width:40%;
+	height:auto;
+	margin:10px auto;
+	border: 1px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding:0px 5px 5px 5px;
+}
+.form_add .div_border50
+{
+	width:50%;
+	height:auto;
+	margin:10px auto;
+	border: 1px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px 5px 5px 5px;
+}
+.form_add .div_border60
+{
+	width:60%;
+	height:auto;
+	margin:10px auto;
+	border: 1px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px 5px 5px 5px;
+}
+.form_add .div_border70
+{
+	width:60%;
+	height:auto;
+	margin:0px auto;
+	border: 0px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px 5px 5px 5px;
+}
+.form_add .div_border80
+{
+	width:80%;
+	height:auto;
+	margin:0px auto;
+	border: 0px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px 5px 5px 5px;
+}
+.form_add .div_border90
+{
+	width:90%;
+	height:auto;
+	margin:0px auto;
+	border: 0px solid #CCCCCC; 
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:0px 5px 5px 5px;
+}
+
+.form_add .div_content
+{
+	width:90%;
+	height:auto;
+	/* background-color:Green;	*/
+	margin:0 auto;
+	
+}
+.form_add .div_content_right
+{
+	float:right;
+}
+.div_content
+{
+	width:90%;
+	height:auto;
+	/* background-color:Green;	*/
+	margin:0 auto;
+}
+
+
+.bgGridview
+{
+	/* background: url('../Images/bgGridview.png') no-repeat top right */
+ }
+
+.abc
+{width:100%}

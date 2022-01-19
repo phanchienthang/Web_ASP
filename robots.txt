@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /Bin/
+Disallow: /AdminTool/
+Disallow: /App_Code/
+Disallow: /App_Data/
+Disallow: /fancybox/
+Disallow: /fonts/
+Disallow: /ckfinder/
+Disallow: /ckeditor/
+Disallow: /aspnet_client/
+Disallow: /js/

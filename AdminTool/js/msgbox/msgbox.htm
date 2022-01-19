@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="msgbox.css">
+<script type="text/javascript" src="msgbox.js"></script>
+<script type="text/javascript">
+function test(){
+// calling the function
+var e=msgbox("Greeting","hello this is me!<br />type your name here:<input type='text' id='inputName'/>","Ok,Cancel",ecallback_func);
+e.myname=document.getElementById("inputName");
+
+var d=msgbox("Overloading","We will pass two new variable's values through two new property (myVal1='Red',myVal2='Blue')","Option1,Option2,Cancel",dcallback_func);
+d.myVal1="Red";
+d.myVal2="Blue";
+
+var c=msgbox("Note","Are you sure you wanna do this?","Yes,No,Cancel",ccallback_func);
+
+var b=msgbox("Info","Your request has been sent successfully","Ok")
+
+var a=msgbox("Warning","Hello there, you made a big mistake by running this...")
+
+}
+
+function ecallback_func(btnval,msgobj){
+	alert("your name is "+msgobj.myname.value);
+}
+
+function dcallback_func(btnval,msgobj){
+	switch (btnval){
+		case "Option1":
+			alert(msgobj.myVal1)
+		break;
+
+		case "Option2":
+			alert(msgobj.myVal2)
+		break;
+
+		case "Cancel":
+			alert("You clicked [Cancel] button")
+		break;
+	}
+}
+
+function ccallback_func(btnval){
+	alert("you clicked ["+btnval+"] Button")
+}
+</script>
+</head>
+<body onload="test()">
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+﻿/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.stunicholls.com/menus/mini-tabbed-pages.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+
+/*#tabs_1,#tabs_2,#tabs_3,#tabs_4,#tabs_5,#tabs_6,#tabs_7,#tabs_8,#tabs_9,#tabs_10,#tabs_11,#tabs_12,#tabs_13,#tabs_14,
+#tabs_15,#tabs_16,#tabs_17,#tabs_18,#tabs_19,#tabs_20,#tabs_21,#tabs_22,#tabs_23,#tabs_24,#tabs_25,#tabs_26,#tabs_27,
+#tabs_28,#tabs_29,#tabs_30,#tabs_31,#tabs_32,#tabs_33,#tabs_34,#tabs_35,#tabs_36,#tabs_37,#tabs_38,#tabs_39
+{width:200px; text-align:center; background: url(icon/top.gif); margin:0; position:relative; 
+ z-index:200; font:bold 11px verdana, arial, sans-serif;}
+
+#tabs_1 ul,#tabs_2 ul,#tabs_3 ul,#tabs_4 ul,#tabs_5 ul,#tabs_6 ul,#tabs_7 ul,#tabs_8 ul,#tabs_9 ul,#tabs_10 ul,#tabs_11 ul,
+#tabs_12 ul,#tabs_13 ul,#tabs_14 ul,#tabs_15 ul,#tabs_16 ul,#tabs_17 ul,#tabs_18 ul,#tabs_19 ul,#tabs_20 ul,#tabs_21 ul,
+#tabs_22 ul,#tabs_23 ul,#tabs_24 ul,#tabs_25 ul,#tabs_26 ul,#tabs_27 ul,#tabs_28 ul,#tabs_29 ul,#tabs_30 ul,#tabs_31 ul,
+#tabs_32 ul,#tabs_33 ul,#tabs_34 ul,#tabs_35 ul,#tabs_36 ul,#tabs_37 ul,#tabs_38 ul,#tabs_39 ul 
+{padding:0; margin:0; width:399px; list-style:none; position:relative;}
+
+#tabs_1 ul li.outer,#tabs_2 ul li.outer,#tabs_3 ul li.outer,#tabs_4 ul li.outer,#tabs_5 ul li.outer,#tabs_6 ul li.outer,
+#tabs_7 ul li.outer,#tabs_8 ul li.outer,#tabs_9 ul li.outer,#tabs_10 ul li.outer,#tabs_11 ul li.outer,#tabs_12 ul li.outer,
+#tabs_13 ul li.outer,#tabs_14 ul li.outer,#tabs_15 ul li.outer,#tabs_16 ul li.outer,#tabs_17 ul li.outer,#tabs_18 ul li.outer,
+#tabs_19 ul li.outer,#tabs_20 ul li.outer,#tabs_21 ul li.outer,#tabs_22 ul li.outer,#tabs_23 ul li.outer,#tabs_24 ul li.outer,
+#tabs_25 ul li.outer,#tabs_26 ul li.outer,#tabs_27 ul li.outer,#tabs_28 ul li.outer,#tabs_29 ul li.outer,#tabs_30 ul li.outer,
+#tabs_31 ul li.outer,#tabs_32 ul li.outer,#tabs_33 ul li.outer,#tabs_34 ul li.outer,#tabs_35 ul li.outer,#tabs_36 ul li.outer,
+#tabs_37 ul li.outer,#tabs_38 ul li.outer,#tabs_39 ul li.outer
+ {float:left; display:inline; margin:0 4px 3px 4px; width:75px; height:53px; border-bottom:1px solid #9c9c9c; 
+  line-height:45px; color:#664;  padding:0 0 0 50px; cursor:pointer;}
+
+#tabs ul li.one {background:#fff url(icon/world.jpg) no-repeat top left;}
+#tabs ul li.two {background:#fff url(icon/key.jpg) no-repeat top left;}
+#tabs ul li.three {background:#fff url(icon/mail.jpg) no-repeat top left;}
+#tabs ul li.four {background:#fff url(icon/search.jpg) no-repeat top left;}
+#tabs ul li.five {background:#fff url(icon/profile.jpg) no-repeat top left;}
+#tabs ul li.six {background:#fff url(icon/draw.jpg) no-repeat top left;}
+
+#tabs_1 ul li div,#tabs_2 ul li div,#tabs_3 ul li div,#tabs_4 ul li div,#tabs_5 ul li div,#tabs_6 ul li div,#tabs_7 ul li div,
+#tabs_8 ul li div,#tabs_9 ul li div,#tabs_10 ul li div,#tabs_11 ul li div,#tabs_12 ul li div,#tabs_13 ul li div,#tabs_14 ul li div,
+#tabs_15 ul li div,#tabs_16 ul li div,#tabs_17 ul li div,#tabs_18 ul li div,#tabs_19 ul li div,#tabs_20 ul li div,#tabs_21 ul li div,
+#tabs_22 ul li div,#tabs_23 ul li div,#tabs_24 ul li div,tabs_25 ul li div,tabs_26 ul li div,#tabs_27 ul li div,#tabs_28 ul li div,
+#tabs_29 ul li div,#tabs_30 ul li div,#tabs_31 ul li div,#tabs_32 ul li div,#tabs_33 ul li div,#tabs_34 ul li div,#tabs_35 ul li div,
+#tabs_36 ul li div,#tabs_37 ul li div,#tabs_38 ul li div,#tabs_39 ul li div
+{display:none;}
+
+#tabs_1 li.selected,#tabs_2 li.selected,#tabs_3 li.selected,#tabs_4 li.selected,#tabs_5 li.selected,#tabs_6 li.selected,
+#tabs_7 li.selected,#tabs_8 li.selected,#tabs_9 li.selected,#tabs_10 li.selected,#tabs_11 li.selected,#tabs_12 li.selected,
+#tabs_13 li.selected,#tabs_14 li.selected,#tabs_15 li.selected,#tabs_16 li.selected,#tabs_17 li.selected,#tabs_18 li.selected,
+#tabs_19 li.selected,#tabs_20 li.selected,#tabs_21 li.selected,#tabs_22 li.selected,#tabs_23 li.selected,#tabs_24 li.selected,
+#tabs_25 li.selected,#tabs_26 li.selected,#tabs_27 li.selected,#tabs_28 li.selected,#tabs_29 li.selected,#tabs_30 li.selected,
+#tabs_31 li.selected,#tabs_32 li.selected,#tabs_33 li.selected,#tabs_34 li.selected,#tabs_35 li.selected,#tabs_36 li.selected,
+#tabs_37 li.selected,#tabs_38 li.selected,#tabs_39 li.selected
+{padding-bottom:132px; border-bottom:1px solid #fff; color:#000; margin-bottom:0;color:#000; background-position:0 -55px; 
+	height:55px; cursor:default;}
+
+#tabs_1 li.selected div,#tabs_2 li.selected div,#tabs_3 li.selected div,#tabs_4 li.selected div,#tabs_5 li.selected div,
+#tabs_6 li.selected div,#tabs_7 li.selected div,#tabs_8 li.selected div,#tabs_9 li.selected div,#tabs_10 li.selected div,
+#tabs_11 li.selected div,#tabs_12 li.selected div,#tabs_13 li.selected div,#tabs_14 li.selected div,#tabs_15 li.selected div,
+#tabs_16 li.selected div,#tabs_17 li.selected div,#tabs_18 li.selected div,#tabs_19 li.selected div,#tabs_20 li.selected div,
+#tabs_21 li.selected div,#tabs_22 li.selected div,#tabs_23 li.selected div,#tabs_24 li.selected div,#tabs_25 li.selected div,
+#tabs_26 li.selected div,#tabs_27 li.selected div,#tabs_28 li.selected div,#tabs_29 li.selected div,#tabs_30 li.selected div,
+#tabs_31 li.selected div,#tabs_32 li.selected div,#tabs_33 li.selected div,#tabs_34 li.selected div,#tabs_35 li.selected div,
+#tabs_36 li.selected div,#tabs_37 li.selected div,#tabs_38 li.selected div,#tabs_39 li.selected div
+{display:block; padding:5px; position:absolute; left:4px; top:55px; width:381px; height:118px; border-bottom:3px solid #fff;}
+
+#tabs li.click div.tab_left
+{background:#fff url(icon/tab_left.gif);}
+
+#tabs li.click div.tab_center
+{background:#fff url(icon/tab_center.gif);}
+
+#tabs li.click div.tab_right
+{background:#fff url(icon/tab_right.gif);}
+
+.clear {clear:both; height:0; line-height:0; overflow:hidden;}
+
+#tabs span.base {display:block; height:20px;font-size:10px; color:#c60; background:url(icon/bottom.gif) bottom;}
+#tabs div h5 {font-size:11px; margin:0;}
+#tabs div p {font-weight:normal; text-align:left; color:#000; margin-top:3px; line-height:15px;}
+#tabs div a img {border:0;}
+#tabs div img.image {float:left; border:0; margin-right:5px; margin-top:-15px;}
+#tabs div a.unlock {background:url(icon/unlock.gif); display:block; width:30px; height:30px; margin:0 auto;}
+#tabs div a.unlock:hover {border:0;}
+#tabs div a:hover.unlock img {visibility:hidden;}
+#tabs p.bold {color:#069; padding-top:5px;}
+#tabs form {margin-top:-10px; padding:0;}
+#tabs form fieldset {padding:0;}
+#tabs p.buttons {text-align:center;}
+*/
+
+/* #tabs {width:100%; text-align:center; background: url(../icon/top.gif); margin:0px; position:relative; z-index:200; font:bold 11px verdana, arial, sans-serif;} */
+#grouptab
+{
+	float:left;
+	margin:2px 0px 2px 2px;
+	border:1px solid #999999;
+	padding:2px 0px 0px 0px;
+	background-color:#EDF3F4;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+#tabs ul 
+{
+	padding:0; margin:0; list-style:none;
+	position:relative;top:0px;
+	width:75px;
+	height:62px;
+	background-color:#EDF3F4;
+	margin-left:4px;
+	margin-right:2px;
+}
+#tabs ul li{display:block; float:left; margin:0 auto; width:75px}
+#tabs ul li.space{display:block; float:left; margin:0; background-color:#D9D9D9; margin-top:5px; height:62px}
+#tabs ul li.outer {float:left; display:block; margin:0px auto; width:75px; height:62px;  margin: 0px 0px 5px 0px;
+	border-bottom:0px solid #9c9c9c;  color:#664; padding:0px; cursor:pointer;}
+/*tab ban đầu*/
+#tabs ul li.one {background:#EDF3F4 url('') no-repeat top left;}
+
+#tabs ul li div {display:none; display:block;width:75px;height:60px;margin-top:5px;}
+
+/*tab đã chọn và đang hoạt động*/
+#tabs li.selected,#tabs ul li.selected 
+{
+	border-bottom:0px solid #fff; color:#000;
+	height:62px; cursor:default; width:75px;
+	margin: 0px 0px 5px 0px;
+	background:url('Images/submenu_hover.jpg') repeat top left;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	
+	-moz-box-shadow: 0 0 1px 1px #a9a9a9;
+	-webkit-box-shadow: 0 0 1px 2px #a9a9a9;
+	box-shadow: 0 0 1px 1px #a9a9a9;
+	}
+#tabs li a{ color:#121212;height:62px;font-size:11px; font-weight:normal; text-decoration:none;line-height:16px; text-align:center; margin: 5px 0px 5px 0px;}
+#tabs li.selected a{color:#121212;height:62px;font-size:11px; line-height:16px; margin:0; text-align:center;  margin: 5px 0px 5px 0px;}
+#tabs ul li.selected div {display:block; padding:0px 0px; position:absolute; left:0px; top:50px; width:100%; height:62px; 
+							border-bottom:0px solid #fff;}
+
+/*tab rê chuột đến*/
+#tabs ul li.one:hover
+{
+	background: url('../Images/submenu_hover.jpg') repeat top left;
+	width:75px; height:62px;  margin: 0px 0px 5px 0px;
+	color:red;
+	-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		
+		-moz-box-shadow: 0 0 1px 1px #a9a9a9;
+		-webkit-box-shadow: 0 0 1px 2px #a9a9a9;
+		box-shadow: 0 0 1px 1px #a9a9a9;
+	
+}
+
+/*tab click và chạy lúc load trang*/
+#tabs ul li.one:active,#tabs ul li:active
+{
+	
+	width:75px; height:62px; margin: 0px 0px 5px 0px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	
+}
+
+#tabs ul li.selected div.tab_left
+{background:#fff url(icon/tab_left.gif);}
+
+#tabs ul li.selected div.tab_center
+{background:#fff url(icon/tab_center.gif);}
+
+#tabs ul li.selected div.tab_right
+{background:#fff url(icon/tab_right.gif);}
+
+.clear {clear:both; height:0; line-height:0; overflow:hidden;}
+
+#tabs span.base {display:block; height:20px;font-size:10px; color:#c60; background:url(icon/bottom.gif) bottom;}
+#tabs div h5 {font-size:11px; margin:0;}
+#tabs div p {font-weight:normal; text-align:left; color:#000; margin-top:3px; line-height:15px;}
+#tabs div a img { margin:0; padding:0}
+#tabs div img.image {float:left; margin-right:5px; margin-top:0px;}
+#tabs div a.unlock {background:url(icon/unlock.gif); display:block; width:30px; height:30px; margin:0 auto;}
+#tabs div a.unlock:hover {border:0;}
+#tabs div a:hover.unlock img {visibility:hidden;}
+#tabs p.bold {color:#069; padding-top:5px;}
+#tabs form {margin-top:-10px; padding:0;}
+#tabs form fieldset {padding:0;}
+#tabs p.buttons {text-align:center;}

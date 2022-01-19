@@ -1,0 +1,100 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Master, App_Web_tozlinaj" %>
+
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" class="ancient-ie old-ie no-js" lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" class="ancient-ie old-ie no-js" lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" class="old-ie no-js" lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if IE 9]>
+<html id="ie9" class="old-ie9 no-js" lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8) ]><!-->
+<html class="no-js" lang="vi" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<!--<![endif]-->
+<head id="Head1" runat="server">
+    <title>Bán Hàng Mã Vạch</title>
+    <%--<link id="CSSPublic" href="DX.ashx?cssfolder=~/Css/BlackGlass/Public&ver=17" rel="Stylesheet" />--%>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+
+	<!-- The styles -->
+	<link id="csss" href="css/bootstrap-classic.min.css" rel="stylesheet"/>
+	
+	<link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+	
+    <link href='css/uniform.default.min.css' rel='stylesheet'>
+   
+	<link href='css/opa-icons.min.css' rel='stylesheet'>
+	
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    <link href="Css/admin-styles.min.css" rel="stylesheet" type="text/css" />
+      <link href="Css/charisma-app-convert.css" rel="stylesheet" type="text/css" />
+   <script type="text/javascript">
+        function GetControlByClientID(name) {
+            var edit = aspxGetControlCollection().Get(name);
+
+            return edit;
+        }
+        function SetTextCustom(control, text) {
+            GetControlByClientID(control).SetText(text);
+        }
+        function FormatSEO(text, link) {
+            GetControlByClientID(link).SetText(locdau(GetControlByClientID(text).GetValue()));
+        }
+       
+
+    </script>
+   <%-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>--%>
+  <script src="/AdminTool/js/jquery-1.7.2.min.js" defer> </script>
+      <script src="/AdminTool/bower_components/bootstrap/dist/js/bootstrap.min.js" defer> </script>
+       <script src="/AdminTool/js/bootstrap-tooltip.min.js" defer> </script>
+      <script src="/AdminTool/js/jquery.uniform.min.js" defer> </script>
+     <script src="/AdminTool/js/charismaMaster.min.js" defer> </script>
+     <script src="/ckeditor/ckeditor.js?v=10" defer></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="overflow: hidden">
+
+    <form id="form2" name="form2" clientidmode="Static" runat="server">
+      <asp:ScriptManager runat="server" ID="scriptNapLai" >
+      <Scripts>
+      
+    <%--  <asp:ScriptReference Path="js/jquery-1.7.2.min.js"/>--%>
+       <%-- <asp:ScriptReference Path="js/jquery-ui-1.8.21.custom.min.js"/>--%>
+      
+     
+    
+            
+          <%-- <asp:ScriptReference Path="bower_components/bootstrap/dist/js/bootstrap.min.js"/>
+                    
+              <asp:ScriptReference Path="js/bootstrap-tooltip.min.js"/>
+                <asp:ScriptReference Path="js/jquery.uniform.min.js"/>
+      
+
+
+         
+              <asp:ScriptReference Path="js/charismaMaster.min.js"/>--%>
+         
+      </Scripts>
+      </asp:ScriptManager>
+    <div style="width: 100%;">
+        <asp:ContentPlaceHolder ID="C1" runat="server">
+        </asp:ContentPlaceHolder>
+
+   
+    </div>
+    </form>
+</body>
+</html>

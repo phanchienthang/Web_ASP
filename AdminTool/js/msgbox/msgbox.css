@@ -1,0 +1,847 @@
+.modal-open {
+  overflow: hidden;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999999 !important;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+       -o-transition:      -o-transform .3s ease-out;
+          transition:         transform .3s ease-out;
+  -webkit-transform: translate3d(0, -25%, 0);
+       -o-transform: translate3d(0, -25%, 0);
+          transform: translate3d(0, -25%, 0);
+}
+.modal.in .modal-dialog {
+  -webkit-transform: translate3d(0, 0, 0);
+       -o-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.modal-dialog {
+  position: relative;
+  width: 600px;
+  margin: 30px auto;
+}
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+          box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+}
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99998;
+  background-color: #000;
+}
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 15px;
+}
+.modal-header .close {
+  margin-top: -2px;
+}
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+.modal-footer {
+  padding: 0 15px 15px 15px;
+  text-align: right;
+}
+.modal-footer input {float:right}
+.modal-footer .btn + .btn {
+  margin-bottom: 0;
+  margin-left: 5px;
+}
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.disablediv
+{
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+.dvmsgbox
+{
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 1px #999999;
+    -webkit-box-shadow: 0px 0px 1px #999999;
+    -webkit-box-shadow: 0px 0px 1px #999999;
+}
+
+.msgboxtitle
+{
+    width: 100%;
+    margin: 0px 4px 0px 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'lucida grande' ,tahoma,verdana,arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 26px;
+    height: 26px;
+    vertical-align: middle;
+    float: left;
+    clear: none;
+    background: #375593 url('./js/msgbox/bg_title_msg.jpg') repeat-x left top;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.msgboxtitle .caption
+{
+    float: left;
+    clear: right;
+    width: 80%;
+    margin-left: 5px;
+}
+
+.msgboxtitle .close
+{
+    cursor: pointer;
+    margin: 1px 2px 0px 0px;
+}
+
+.msgboxdesc
+{
+    width: 100%; /*min-height: 112px;*/ /*height: 100%;*/
+    font-family: arial, verdana;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0px; /*margin:5px 0px 0px 0px;*/
+    color: black;
+    float: left;
+    clear: none;
+    vertical-align: top;
+    white-space: pre-line;
+}
+span.textcontent
+{
+    display: block;
+    
+    /*height: inherit;
+    margin-left: 0;
+    margin-top: 15px;
+    text-align: center;
+    text-indent: 0px;*/
+    /*font-weight: bold;*/
+    font-size: 13pt;
+    line-height:17pt;
+}
+
+.msgboxbuttons
+{
+    width: 295px;
+    padding: 0px; /*margin: 2px 4px 10px 2px;*/
+    float: left;
+    clear: none;
+}
+.msgboxbuttons input[type="button"]
+{
+    font-family: verdana;
+    font-size: 16px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    /*background: #5d76aa url(./js/msgbox/bg_title_msg.jpg) repeat-x;*/
+    border: none;
+    padding: 0px 15px;
+    margin: 0px 15px 7px 2px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    clear: left;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.dvmsgbox .msgboxbuttons a, .dvmsgbox .msgboxbuttons a:hover
+{
+    font-family: verdana;
+    font-size: 16px;
+    width: auto;
+    height: 27px;
+    line-height: 27px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background: #ff9999;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9999', endColorstr='#ff0000');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff9999), to(#FF0000));
+    background: -moz-linear-gradient(top, #ff9999, #FFF);
+    background: #ff9999 url('js/msgbox/bgBtnExit_Red.jpg') repeat-x;
+    border: solid 1px #FF0000;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 8px 7px 8px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    clear: left;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.dvmsgbox .msgboxbuttons a:hover
+{
+    opacity: 0.7;
+}
+/**/
+.msgboxdesc .left
+{
+    max-width: 100%; /*float: left;*/ /*max-width: 150px;*/ /*max-height: 40px;*/ /*margin:5px 0px 0px 10px;*/
+    color: #fff12e;
+    background: #282425;
+}
+.msgboxdesc .left p
+{
+    margin: 5px 0px 5px 10px;
+    font-weight: bold;
+}
+
+.msgboxdesc .right
+{
+    min-width: 150px; /*height: 100px;*/
+    width: 100%; /*float: right; margin:40px 0px auto 0px;*/ /*line-height: 23px;*/
+}
+/**/
+
+/* private*/
+/*-----start nullvalue-----------------------------*/
+.dvmsgbox.nullvalue /*Div main msgbox*/
+{
+    border: #FFDA91 solid 1px;
+    background-size: 120px 120px;
+    background-color: #FFE3BA;
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	-pie-background: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent) 0 0 / 50px 50px, #FFE3BA;
+}
+.dvmsgbox.nullvalue .msgboxdesc
+{
+    font-size: 16px;
+}
+.nullvalue span.textcontent
+{
+    /*color: rgb(185, 78, 6);*/
+    color: #282329;
+}
+/*text message*/
+.dvmsgbox.nullvalue .msgboxbuttons
+{
+    width: 95%;
+}
+.dvmsgbox.nullvalue .msgboxbuttons input[type="button"]
+{
+    background: #fef22e; /*fee140 url(./js/msgbox/bgBtnExit_Yellow.jpg) repeat-x;*/ /*border: solid 1px #9c9c9c;*/
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    
+    background-image: -webkit-linear-gradient(#FFA520, #FC9C10 60%, #FFA727);
+	background-image: -o-linear-gradient(#FFA520, #FC9C10 60%, #FFA727);
+	background-image: linear-gradient(#FFA520, #FC9C10 60%, #FFA727);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FDC36F', endColorstr='#FC9C10', GradientType=0);
+	filter: none;
+	border-bottom: 1px solid #E78A03;
+    color: #FFFFFF;
+    box-shadow:0px 0px 1px #F08E00;outline:0
+    
+}
+.dvmsgbox.nullvalue .msgboxbuttons input[type="button"]:hover
+{
+    /*color: rgb(87, 80, 0);*/
+    /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#FBED50), to(#F8EE06));*/
+    opacity:.7;
+}
+/*-----end nullvalue-------------------------------*/
+
+/*-----start del, exit, deleteDH, hiddenDH, disConnect, deleteHH----------------------------------*/
+.dvmsgbox.del, .dvmsgbox.exit, .dvmsgbox.deleteDH, .dvmsgbox.hiddenDH, .dvmsgbox.Connect, .dvmsgbox.deleteHH /*Div main msgbox*/
+{
+    border: #FFE0E0 solid 1px;
+	background-size: 120px 120px;
+	background-color: #FFDADA;
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	-pie-background: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent) 0 0 / 50px 50px, #FFDADA;
+	
+  /*background:linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent) 0 0 / 50px 50px, #FFDFDF;*/
+}
+.dvmsgbox.del .msgboxdesc, .dvmsgbox.exit .msgboxdesc, .dvmsgbox.deleteHH .msgboxdesc, .dvmsgbox.deleteDH .msgboxdesc, .dvmsgbox.hiddenDH .msgboxdesc, dvmsgbox.Connect .msgboxdesc
+{
+    font-size: 16px;
+}
+.del span.textcontent, .exit span.textcontent, .deleteDH span.textcontent, .deleteHH span.textcontent, .hiddenDH span.textcontent, .Connect span.textcontent
+{
+    color: #FF0000;
+}
+/*text message*/
+
+.dvmsgbox.del .msgboxbuttons, .dvmsgbox.exit .msgboxbuttons, .dvmsgbox.deleteDH .msgboxbuttons, .dvmsgbox.deleteHH .msgboxbuttons, .dvmsgbox.hiddenDH .msgboxbuttons, .dvmsgbox.Connect .msgboxbuttons
+{
+    width: 95%;
+}
+
+.dvmsgbox.del .msgboxbuttons input[type="button"], .dvmsgbox.exit .msgboxbuttons input[type="button"], .dvmsgbox.deleteDH .msgboxbuttons input[type="button"], .dvmsgbox.deleteHH .msgboxbuttons input[type="button"], .dvmsgbox.hiddenDH .msgboxbuttons input[type="button"], .dvmsgbox.Connect .msgboxbuttons input[type="button"]
+{
+    /*background: #ff9999 url(./js/msgbox/bgBtnExit_Red.jpg) repeat-x;
+    border: solid 1px #FF0000;*/
+    background-image: -webkit-linear-gradient(#FF626A, #FD5B62 60%, #FD4747);
+	background-image: -o-linear-gradient(#FF626A, #FD5B62 60%, #FD4747);
+	background-image: linear-gradient(#FF626A, #FD5B62 60%, #FD4747);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF626A', endColorstr='#FD4747', GradientType=0);
+	filter: none;
+	border-bottom: 1px solid #E21E27;
+    color: #FFFFFF;
+    box-shadow:0px 0px 1px #FF7B7B;outline:0
+}
+.dvmsgbox.del .msgboxbuttons input[type="button"]:hover, .dvmsgbox.exit .msgboxbuttons input[type="button"]:hover, .dvmsgbox.deleteDH .msgboxbuttons input[type="button"]:hover, .dvmsgbox.deleteHH .msgboxbuttons input[type="button"]:hover, .dvmsgbox.hiddenDH .msgboxbuttons input[type="button"]:hover, .dvmsgbox.Connect .msgboxbuttons input[type="button"]:hover
+{
+    opacity: 0.7;
+}
+/*-----end exit------------------------------------*/
+
+/*-----start success--------success Money-----------------------*/
+.dvmsgbox.success, .dvmsgbox.Money, .dvmsgbox.SaleOff /*Div main msgbox*/
+{
+    border: #4fbd61 solid 1px;
+    background-size: 120px 120px;
+    
+	background-size: 120px 120px;
+	background-color: #C3FFCC;
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	-pie-background: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent) 0 0 / 50px 50px, #C3FFCC;
+    
+    
+}
+.dvmsgbox.success .msgboxdesc, .dvmsgbox.Money .msgboxdesc, .dvmsgbox.SaleOff .msgboxdesc
+{
+    font-size: 16px;
+}
+.success span.textcontent, .Money span.textcontent, .SaleOff span.textcontent
+{
+    color: #006700;
+}
+/*text message*/
+.dvmsgbox.success .msgboxbuttons, .dvmsgbox.Money .msgboxbuttons, .dvmsgbox.SaleOff .msgboxbuttons
+{
+    width: 95%;
+}
+.dvmsgbox.success .msgboxbuttons input[type="button"], .dvmsgbox.Money .msgboxbuttons input[type="button"], .dvmsgbox.SaleOff .msgboxbuttons input[type="button"]
+{
+    
+    background: #1bc437; /*fee140 url(./js/msgbox/bgBtnExit_Yellow.jpg) repeat-x;*/ /*border: solid 1px #9c9c9c;*/ 
+    background-image: -webkit-linear-gradient(#38DD55, #48D860 60%, #33D54D);
+	background-image: -o-linear-gradient(#38DD55, #48D860 60%, #33D54D);
+	background-image: linear-gradient(#38DD55, #48D860 60%, #33D54D);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#38DD55', endColorstr='#33D54D', GradientType=0);
+	filter: none;
+	border-bottom: 1px solid #00B920;
+    color: #FFFFFF;
+    box-shadow:0px 0px 1px #61D575; outline:0
+    
+}
+.dvmsgbox.success .msgboxbuttons input[type="button"]:hover, .dvmsgbox.Money .msgboxbuttons input[type="button"]:hover, .dvmsgbox.SaleOff .msgboxbuttons input[type="button"]:hover
+{
+    opacity: 0.7;
+    /*background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#00c220), to(#4fbd61));*/
+}
+/*-----end success---------------------------------*/
+
+/*-----start identification(Giay To Luu)---ChangeNgay----------------------------*/
+.dvmsgbox.identification, .dvmsgbox.ChangeNgay /*Div main msgbox*/
+{
+    border: #dde4ff solid 1px;
+    background-size:120px 120px;
+    background: #D7DFFF;
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	-pie-background: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent) 0 0 / 50px 50px, #D7DFFF;
+}
+.dvmsgbox.identification .msgboxdesc, .dvmsgbox.ChangeNgay .msgboxdesc
+{
+    font-size: 16px;
+}
+.identification span.textcontent, .ChangeNgay span.textcontent
+{
+    color: #2f5aff;
+}
+/*text message*/
+
+.dvmsgbox.identification .msgboxbuttons, .dvmsgbox.ChangeNgay .msgboxbuttons
+{
+    width: 95%;
+}
+
+.dvmsgbox.identification .msgboxbuttons input[type="button"], .dvmsgbox.identification .msgboxbuttons a, .dvmsgbox.ChangeNgay .msgboxbuttons input[type="button"], .dvmsgbox.ChangeNgay .msgboxbuttons a
+{
+    background:#D7DFFF;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    
+    background-image: -webkit-linear-gradient(#8DA2F5, #8CA3FF 60%, #8CA3FF);
+	background-image: -o-linear-gradient(#8DA2F5, #8CA3FF 60%, #8CA3FF);
+	
+    background-image: linear-gradient(#8DA2F5, #8CA3FF 60%, #8CA3FF);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8DA2F5', endColorstr='#8CA3FF', GradientType=0);
+	filter: none;
+	
+    border-bottom: 1px solid #768BE0;
+    color: #FFFFFF;
+    box-shadow: 0px 0px 1px #8EA5FF;outline:0
+}
+.dvmsgbox.identification .msgboxbuttons input[type="button"]:hover, .dvmsgbox.ChangeNgay .msgboxbuttons input[type="button"]:hover
+{
+    opacity: 0.7;
+}
+/*-----end del---------------------------------*/
+
+/*-----start exitChangeData---------------------------------*/
+.dvmsgbox.exitChangeData /*Div main msgbox*/
+{
+    border: #f99e1c solid 1px;
+    background: #CCC;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f99e1c', endColorstr='#fff100');
+    background: -webkit-gradient(linear, left top, left bottom, from(#f99e1c), to(#fff100));
+    background: -moz-linear-gradient(top, #f99e1c, #fff100);
+}
+.dvmsgbox.exitChangeData .msgboxdesc
+{
+    font-size: 16px;
+}
+.exitChangeData span.textcontent
+{
+    color: #2f5aff;
+}
+/*text message*/
+
+.dvmsgbox.exitChangeData .msgboxbuttons
+{
+    width: 95%;
+}
+
+.dvmsgbox.exitChangeData .msgboxbuttons input[type="button"], .dvmsgbox.exitChangeData .msgboxbuttons a
+{
+    background: #fee140 url(./js/msgbox/bgBtnExit_Yellow.jpg) repeat-x;
+    border: solid 1px #9c9c9c;
+    color: rgb(0, 27, 226);
+}
+.dvmsgbox.exitChangeData .msgboxbuttons input[type="button"]:hover
+{
+    opacity: 0.7;
+}
+/*-----end exitChangeData---------------------------------*/
+
+/* private-------------khi them img nho' phai co 'img' nam dau tien------------------------------------------*/
+
+.imgnullvalue
+{
+    /*background: url(./img/opa-icons-color32.png);*/
+    background-position: -128px -256px;
+}
+.imgexit
+{
+    /*background: transparent url(./js/msgbox/img/stopicon.png) no-repeat 10px 0px;*/
+    color: #FF0000;
+    
+}
+.imgsuccess
+{
+    /*background: transparent url(./js/msgbox/img/successicon.png) no-repeat 10px 0px;*/
+    color: #fff;
+    background: #80ca24;
+}
+.imgdel
+{
+    background: transparent url(./js/msgbox/img/Cancel.png) no-repeat 0px 0px;
+}
+/*huy hang*/
+.imgidentification
+{
+    background: transparent url(./js/msgbox/img/ident.png) no-repeat 0px 0px;
+}
+.imgdeleteDH
+{
+    background: transparent url(./js/msgbox/img/deleteDH.png) no-repeat 0px 0px;
+}
+.imgdeleteHH
+{
+    background: transparent url(./js/msgbox/img/clothing.png) no-repeat 0px 0px;
+}
+.imghiddenDH
+{
+    background: transparent url(./js/msgbox/img/hiddenDH.png) no-repeat 0px 0px;
+}
+.imgConnect
+{
+    background: transparent url(./js/msgbox/img/connect.png) no-repeat 0px 0px;
+}
+.imgMoney
+{
+    background: transparent url(./js/msgbox/img/money_big.png) no-repeat 0px 0px;
+}
+.imgChangeNgay
+{
+    background: transparent url(./js/msgbox/img/doiNgayIcon.png) no-repeat 0px 0px;
+}
+.imgSaleOff
+{
+    background: transparent url(./js/msgbox/img/giam_gia.png) no-repeat 0px 0px;
+}
+/*Giam gia*/
+.imgexitChangeData
+{
+    background: transparent url(./js/msgbox/img/changedata.png) no-repeat 0px 0px;
+}
+/*thong bao thoat khi co su thay doi data*/
+
+/********************************************************************
+	Css danh rieng cho thong bao co qua nhieu dong (thong tin dua ra)
+*/
+
+.dvmsgmoreline
+{
+    /*position: absolute;
+    z-index: 99999;
+    padding: 0px;
+    margin: 0px; 
+    background: #FFFFFF url('') no-repeat left top;
+    top: 0;
+    left: 0; 
+    border: #1e428e solid 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 3px 3px #6c6c6c;
+    -webkit-box-shadow: 0px 0px 3px 3px #6c6c6c;
+    -webkit-box-shadow: 0px 0px 3px 3px #6c6c6c;*/
+}
+.msgboxtitle
+{
+    width: 100%;
+    margin: 0px 4px 0px 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'lucida grande' ,tahoma,verdana,arial,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 26px;
+    height: 26px;
+    vertical-align: middle;
+    float: left;
+    clear: none;
+    background: #375593 url('./js/msgbox/bg_title_msg.jpg') repeat-x left top;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.msgboxtitle .caption
+{
+    float: left;
+    clear: right;
+    width: 80%;
+    margin-left: 5px;
+}
+
+.msgboxtitle .close
+{
+    cursor: pointer;
+    margin: 1px 2px 0px 0px;
+}
+
+.msgmoreline
+{
+    /*width: 100%;
+    min-height: 112px;
+    height: 100%;*/
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    /*padding: 0px;
+    margin: 5px 0px 0px 0px;*/
+    color: black;
+    /*float: left;
+    clear: none;
+    vertical-align: top;
+    white-space: pre-line;*/
+}
+
+.msgmorebuttons
+{
+    width: 100%;
+    padding: 0px;
+    margin: 2px 4px 10px 2px;
+    float: left;
+    clear: none;
+}
+.msgmorebuttons input[type="button"]
+{
+    font-family: verdana;
+    font-size: 16px;
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    /*background: #5d76aa url(./js/msgbox/bg_title_msg.jpg) repeat-x;*/
+    border: none;
+    padding: 0px 15px;
+    margin: 0px 15px 7px 2px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    clear: left;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.dvmsgmoreline .msgmorebuttons a, .dvmsgmoreline .msgmorebuttons a:hover
+{
+    font-family: verdana;
+    font-size: 16px;
+    width: auto;
+    height: 27px;
+    line-height: 27px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background: #ff9999;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9999', endColorstr='#ff0000');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff9999), to(#FF0000));
+    background: -moz-linear-gradient(top, #ff9999, #FFF);
+    background: #ff9999 url('js/msgbox/bgBtnExit_Red.jpg') repeat-x;
+    border: solid 1px #FF0000;
+    padding: 0px 10px 0px 10px;
+    margin: 0px 8px 7px 8px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    clear: left;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.dvmsgmoreline .msgmorebuttons a:hover
+{
+    opacity: 0.7;
+}
+
+.dvmsgmoreline .moreline
+{
+	border: #FFE0E0 solid 1px;
+	background-size: 120px 120px;
+	background-color: #FFDADA;
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent);
+	-pie-background: linear-gradient(135deg, rgba(255, 255, 255, .2) 25%, transparent 25%,transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,transparent 75%, transparent) 0 0 / 50px 50px, #FFDADA;
+}
+/**/
+.msgmoreline .left
+{
+    width: 150px;
+    float: left;
+    max-width: 150px;
+    height: 230px;
+    margin: 40px 0px 0px 25px;
+}
+
+.msgmoreline.right,.msgmoreline .right
+{
+    /*float: right;*/
+    min-width: 210px;
+    height: 230px;
+    width: 90%;
+    margin: 10px auto;
+    line-height: 23px;
+    overflow: auto;
+    border: 1px solid #FFD3D3;
+}
+.msgmoreline .right span.textcontent
+{
+    display: block;
+    width: 100%;
+    height: inherit;
+    margin-left: 0;
+    margin-top: 15px;
+    text-align: left;
+    text-indent: 0px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 23px;
+    margin-left: 10px;
+}
+
+/*-----start del, exit, deleteDH, hiddenDH, disConnect, deleteHH----------------------------------*/
+.dvmsgmoreline
+{
+   /* border: #ff9f9f solid 1px;
+    background: #c3c3c3;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd2d2', endColorstr='#fff5f5');
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffd2d2), to(#fff5f5));
+    background: -moz-linear-gradient(top, #ffd2d2, #fff5f5);*/
+}
+.dvmsgmoreline .msgmoreline
+{
+    font-size: 16px;
+}
+.msgmoreline .right span.textcontent
+{
+    color: #FF0000;
+}
+/*text message*/
+
+.dvmsgmoreline .msgmorebuttons
+{
+    width: 95%;
+}
+
+.dvmsgmoreline .msgmorebuttons input[type="button"]
+{
+    background-image: -webkit-linear-gradient(#FF626A, #FD5B62 60%, #FD4747);
+	background-image: -o-linear-gradient(#FF626A, #FD5B62 60%, #FD4747);
+	background-image: linear-gradient(#FF626A, #FD5B62 60%, #FD4747);
+	background-repeat: no-repeat;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF626A', endColorstr='#FD4747', GradientType=0);
+	filter: none;
+	border-bottom: 1px solid #E21E27;
+    color: #FFFFFF;
+    box-shadow:0px 0px 1px #FF7B7B;outline:0
+}
+.dvmsgmoreline .msgmorebuttons input[type="button"]:hover
+{
+    opacity: 0.8;
+}
+/*-----end exit------------------------------------*/
+.imgmoreline
+{
+    background: transparent url(./js/msgbox/img/changedata.png) no-repeat 0px 0px;
+}
+
+/* For the "inset" look only ----- scroll
+===================================================================================================*/
+/* Let's get this party started */
+.msgmoreline.right::-webkit-scrollbar {
+    width: 9px;
+    height:9px;
+}
+
+/*Button*/
+.msgmoreline.right::-webkit-scrollbar-button:start:decrement,
+.msgmoreline.right::-webkit-scrollbar-button:end:increment  {
+    display: none;
+}
+ 
+/* Track */
+.msgmoreline.right::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 113, 113, 0.3); 
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+/**/ 
+
+            
+/* Handle */
+.msgmoreline.right::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    box-shadow:1px 1px 6px #FF3434 inset;
+    /*background:-webkit-gradient( linear, left top, left bottom, color-stop(0.0, #FF6969), color-stop(1.0, #D83333) );*/
+}
+.msgmoreline.right::-webkit-scrollbar-thumb:vertical 
+{
+	background-color:-webkit-gradient( linear, left top, left bottom, color-stop(0.0, #FF6969), color-stop(1.0, #D83333) );
+    
+}
+
+.msgmoreline.right::-webkit-scrollbar-thumb:horizontal
+{
+	background-color:-webkit-gradient( linear, left top, left bottom, color-stop(0.0, #FF6969), color-stop(1.0, #D83333) );
+	
+}
+/**/            
+
+.msgmoreline.right::-webkit-scrollbar-thumb:window-inactive {
+	/* background: rgba(255,0,0,0.4); 
+	background-color:red;*/
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

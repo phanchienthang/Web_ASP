@@ -1,0 +1,105 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="AdminTools, App_Web_tozlinaj" %>
+
+<%@ Register Src="~/UserControls/PopupLevel1.ascx" TagName="PopupLevel1" TagPrefix="p1" %>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="/css/AdminTool/cssHandler.css" rel="stylesheet" />
+    <%--<script src="/js/jquery1.min.js"></script>--%>
+    <script src="js/jquery-1.7.2.min.js"> </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="css/bootstrap-classic.min.css" rel="stylesheet" />
+    <link href="css/charisma-app.min.css" rel="stylesheet" />
+    <link href="bower_components/responsive-tables/responsive-tables.min.css" rel="stylesheet" />
+    <link href="css/noty_theme_default.css" rel="stylesheet" />
+    <link href="css/bootstraap-tour.min.css" rel="stylesheet" />
+    <link href="css/simple-sidebar.css" rel="stylesheet" />
+    <link href="js/msgbox/msgbox.min.css" rel="stylesheet" />
+    <link href="css/admin-styles.min.css" rel="stylesheet" />
+    <link href="css/opa-icons.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="mainpage">
+            <div id="head_admin">
+                <ul class="menu_admin">
+                    <li><a href="/AdminTool/BanLamViec.aspx">Bàn làm việc</a></li>
+                    <li class="dropdown">
+                        <a href="#">Sản phẩm</a>
+                        <ul class="dropdown_menu">
+                            <li>
+                                <a href="/AdminTool/DanhSachCatalogsProducts.aspx">Danh mục
+                                    <span>Tất cả loại sản phẩm và mặt hàng trong cửa hàng của bạn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/AdminTool/DanhSachProducts.aspx">Sản phẩm
+                                    <span>Xem, thêm và chỉnh sửa các sản phẩm.</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Người dùng</a></li>
+                    <li><a href="/thanhcong.aspx" target="_blank">Trang chủ</a></li>
+                </ul>
+            </div>
+            <div class="body-content clearfix">
+                <script src="js/bootstrap-modal.js"></script>
+                <script src="js/msgbox/msgbox.min.js" type="text/javascript" async></script>
+                <script src="js/MasterPageLoad.js" type="text/javascript" async></script>
+                <script src="js/scrResult.min.js" type="text/javascript" async></script>
+                <%--<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>--%>
+                <asp:ScriptManager runat="server" ID="scriptNapLai">
+                </asp:ScriptManager>
+                <script type="text/javascript" async>
+                    var FirstLoading = true;
+                    var iframe;
+                    function OnPopupInit(s, e) {
+                        iframe = p1.GetContentIFrame();
+                        ASPxClientUtils.AttachEventToElement(iframe, 'load', OnContentLoaded);
+                    }
+
+                    function OnPopupShown(s, e) {
+                        if (FirstLoading)
+                            lp.ShowInElement(iframe);
+                    }
+
+                    function OnContentLoaded(e) {
+                        FirstLoading = false;
+                        lp.Hide();
+                        if (p1.GetContentIFrameWindow().btnLuu) {
+                            var col_h = CalculateSize_Content();
+                            p1.GetContentIFrameWindow().setHeightFrame(col_h);
+                        }
+                    }
+
+                    function onLogin() {
+                        checkNavigate = true;
+                        window.location.href = 'Login.aspx';
+
+                    }
+
+                    window.onbeforeunload = function (e) {
+                        if (!checkNavigate) {
+                            window.stop();
+                            return "";
+                        }
+                    }
+                </script>
+                <p1:PopupLevel1 runat="server" ID="pop1"></p1:PopupLevel1>
+
+                <asp:ContentPlaceHolder ID="C1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- content ends -->
+            </div>
+        </div>
+    </form>
+    <asp:PlaceHolder runat="server" ID="phdBottomScripts" />
+</body>
+</html>

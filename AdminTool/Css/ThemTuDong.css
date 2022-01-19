@@ -1,0 +1,469 @@
+﻿#dev
+{
+	width:100%;
+	min-height:100px;
+	/* background-color:#e3efff; */
+}
+/*	tiêu đề group khi không click
+-------------------------------------------------------*/
+.GroupRow_dev
+{
+	/* background-color:#dfe2eb;
+	color:#60616f; */
+	font-size:12px;
+	font-weight:bold;
+}
+/*	tiêu đề group khi click
+-------------------------------------------------------*/
+.FocusedGroupRow_dev
+{
+	/* background-color:#316ac5;
+	color:#FFFFFF; */
+	font-size:12px;
+	font-weight:bold;
+}
+/*	tiêu đề gridviewDevExpress
+-------------------------------------------------------*/
+.Head_dev
+{
+	/* background: url('../Images/bg_title_dev.jpg') repeat-x; */
+	vertical-align:top;
+	text-align:center;	
+}
+
+.Row_dev
+{
+	font-size:12px;
+}
+/*.PreviewRow_dev
+{
+	 background-color:#3333FF; 
+}
+.AlternatingRow_dev
+{
+	background-color:#E3EFFF;  
+}
+.FocusedRow_dev
+{
+	Color:#FFFFFF;
+	background-color:#528fff; 
+}
+.Cell_dev
+{
+	
+}*/
+.dev_left
+{
+	float:left;
+	width:75%;
+	background-color:#FFFFFF;
+}
+.dev_left .tinhtrang_donhang
+{
+	width:100%;
+	max-height:360px;
+	min-height:350px;
+	overflow:scroll;
+}
+.dev_left .dev_form
+{
+	width:100%;
+	height:auto;
+	overflow:visible;
+	/* background-color:#E3EFFF; */
+}
+.dev_right
+{
+	float:right;
+	width:25%;
+	/* min-height:380px; */
+}
+.dev_ThuChi
+{
+	width:100%;
+	height:350px;
+	max-height:350px;
+	overflow:hidden	;
+}
+.dev_TongDonHang
+{
+	float:right;
+	width:50%;
+	height:50px;
+	margin-top:0px;
+}
+/* Form Thêm hàng
+-------------------------------------------------------------------------------------*/
+.dev_ID_title_form
+{
+	height:32px;
+	float:right;
+	width:60%;
+	line-height:32px;
+	margin-top:-3px;
+}
+.dev_TextTitle_h1 /*text lớn*/
+{
+	font-size:15px;
+	color:#FF0000;
+	font-weight:bold;
+}
+.dev_TextTitle_h5 /*text nhỏ*/
+{
+	font-size:14px;
+	color:#000066;
+	font-weight:normal;
+}
+.dev_TextTitle_h12
+{
+	font-size:12px;
+	color:#000066;
+	font-weight:bold;
+}
+	/*left ____________________________________*/
+
+.dev_content_panel_left
+{
+	float:left;
+	width:78%;
+	margin:0px;
+}
+.dev_content_panel_left_ThemHang
+{
+	float:left;
+	width:59.5%;
+	margin:0px;
+}
+.content_main_KhachHang
+{
+	width:99%;
+	height:30px;
+	margin:0px;
+	margin-left:5px;
+	/*line-height:40px;*/
+}
+	/*right ____________________________________*/
+.dev_content_panel_right
+{
+	float:right;
+	width:21.5%;
+	margin:0px;
+}
+.dev_content_panel_right_ThemHang
+{
+	float:right;
+	width:40%;
+	margin:0px;
+}
+.test
+{
+	padding:0px;
+	margin:0 0 0px 10px;
+}
+	/*div-Thêm hàng ____________________________________*/
+.dev_divForm_title
+{
+	width:99%;
+	height:32px;
+	text-align:left;
+	margin:0 auto 0px auto;
+	/* padding-top:5px; */
+}	
+.dev_divForm	
+{
+	width:99%;
+	height:auto;
+	min-height:48px;
+	text-align:left;
+	margin:0 auto 0px auto;
+	/* padding-top:5px; */
+	overflow:hidden; 
+	padding-bottom:2px;
+}
+.dev_divForm legend
+{
+	font-size:12px;
+	font-family:Arial;
+	color:#0000FF;
+	font-weight:bold;
+	margin-left:10px;
+	padding-bottom:1px;
+}
+.dev_LoaiHang /*nằm bên trái của form Thêm Hàng*/
+{
+	float:left;
+	width:19%;
+	margin-right:5px;
+}
+.dev_LoaiHang_ChiTiet	/*nằm bên phải của form Thêm Hàng*/
+{
+	float:right;
+	width:79%;
+	margin-top:0px;
+	margin-right:5px;
+	/*background-color:#FF9933;*/
+} 
+.row_LoaiHang_ChiTiet
+{
+	width:100%;
+	height:35px;
+	margin: 20px 0px;
+}
+.div_2tab
+{
+	float:left;
+	width:71.5%;
+	margin-top:5px;
+	margin-left:0px;
+	height:250px;
+	border:1px solid #cecece;
+	overflow:auto;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.div_KT_TonKho
+{
+	float:right;
+	width:28%;
+	margin-top:4px;
+	margin-right:0px;
+	height:255px;
+	/*border:1px solid #9F9F9F;*/
+	overflow:hidden;
+}
+/*div-footer ____________________________________*/
+#dev_footer
+{
+	width:99%;
+	padding-top:0px;
+	/* overflow:auto; */
+	margin-left:5px;
+}
+#dev_footer legend
+{
+	font-size:12px;
+	font-family:Arial;
+	color:#0000ff;
+	font-weight:bold;
+	margin-top:5px;
+	margin-left:10px;
+}
+	/*Dời ngày ____________________________________*/
+.div_DoiNgay
+{
+	width:100%;
+	height:auto;
+	float:left;
+}
+.div_TienDuaKhach
+{
+	width:100%;
+	float:right;
+	margin-right:1px;
+	margin-top:0px;
+	padding-top:1px;
+}
+/*div hoạt động soạn hàng 
+---------------------------------------------------------------------------------------*/
+.dev_ID_title_form .text
+{
+	float:left;
+	margin-right:10px;
+}
+.dev_ID_title_form .textbox
+{
+	float:left;
+	margin-top:10px;
+	margin-right:10px;
+}
+.dev_divForm .dev_ChonHang
+{
+	float:left;
+	width:50%;
+	margin-left:20px;	
+}
+.dev_divForm .dev_TraVe
+{
+	float:right;
+	width:40%;
+	text-align:center;
+	margin:0px auto 10px 20px ;
+	height:auto;
+}
+.SoanHang_Left
+{
+	float:left;
+	text-align:left;
+	width:45%;
+	height:420px;
+}
+.GiaoHang_Left
+{
+	float:left;
+	text-align:left;
+	width:47%;
+	height:380px;
+}
+.GiaoHang_Right
+{
+	float:right;
+	text-align:left;
+	width:48%;
+	height:375px;
+}
+.SoanHang_Left .form_GridView_left
+{
+	/*text-align:center;*/
+	width:100%;
+	max-height:300px;	
+	overflow:auto;
+}
+.HangHoaChuaSoan
+{
+	width:100%;
+	min-height:180px;
+	max-height:180px;
+	/* padding:0px 1px;
+	background-color:Green; */
+	overflow:hidden;
+}
+.HangHoaCanSoan
+{
+	width:100%;
+	min-height:180px;
+	max-height:180px;
+	overflow:hidden;
+}
+.HangHoaChuaGiao
+{
+	text-align:left;
+	min-height:365px;
+	max-height:365px;
+	overflow:hidden;
+	margin-top:0px;
+}
+.HangHoaDaGiao
+{
+	text-align:left;
+	width:100%;
+	min-height:365px;
+	max-height:365px;
+	overflow:hidden;
+	margin-top:0px;
+}
+.SoanHang_Right
+{
+	float:right;
+	text-align:left;
+	width:50%;
+	height:350px;
+}
+.SoanHang_Right .form_GridView_left
+{
+	text-align:left;
+	width:100%;
+	max-height:300px; 
+	overflow:auto;
+}
+.SoanHang_Center
+{
+	float:left;
+	text-align:center;
+	margin:0px 3px;
+	height:420px;
+	width:4%;
+}
+.SoanHang_Center .button_center
+{
+	margin-top:80px;
+}
+.HangHoaDaSoan
+{
+	width:100%;
+	min-height:380px;
+	max-height:380px;
+	overflow:hidden;
+}
+.dev_divForm .title_GridView
+{
+	text-align:center;
+	width:100%;
+	height:5px;
+	font-size:13px;
+	font-weight:bold;
+	color:red;
+}
+/*______________
+			kết thúc div hoạt động soạn hàng */
+			
+/*div hoạt động giao hàng 
+---------------------------------------------------------------------------------------*/
+/*______________
+			kết thúc div hoạt động giao hàng */
+			
+			
+/*-------------------------------------------------------------------------------------*/
+
+.rpn_title
+{
+	margin:0 auto;
+}
+.border_radius
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.border_radius_padding
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-bottom:10px;
+	margin-left:10px;
+	padding-left:5px;
+}
+.grid
+{
+	border: 1px threedhighlight outset;
+	background-color:threedface;
+	padding:0px 0px;
+}
+fieldset
+{
+	/*	border: 1px groove threedface;	*/
+	border: 1px threedhighlight outset;
+	background-color:threedface;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding-left:10px;
+}
+legend.text_red
+{
+	font-size:12px;
+	font-family:Arial;
+	color:#FF0000;
+	font-weight:bold;
+	margin-left:10px;
+	padding-bottom:1px;
+}
+.border0
+{
+	border:0px solid #ffffff;
+}
+.pn_padding
+{
+	margin:0px 5px 5px 5px;
+}
+
+.dev_divForm .title_font_normal legend
+{
+	font-size:12px;
+	font-family:Arial;
+	color:#0000FF;
+	font-weight:normal;
+	margin-left:10px;
+	padding-bottom:1px;
+}

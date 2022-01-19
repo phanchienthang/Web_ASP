@@ -1,0 +1,90 @@
+﻿.box_note
+{
+	/*float:left;*/
+	height:160px;
+	width:165px;
+	padding-top:0px;
+	margin:0 auto;
+	margin-top:0px;
+}
+.box_note .head
+{
+	width:inherit;
+	height:44px;
+	background:transparent url('./Images/label_top.png') no-repeat right top;
+	margin-bottom: 0px;
+	position:relative;
+}
+.box_note .title
+{
+	width:inherit;
+	height:auto;
+	background:threedface url('./Images/label_bottom.png') no-repeat right top;
+	border: 1px threedhighlight outset;
+	border-top:none;
+	border-bottom:none;
+	padding-top:15px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	
+}
+.box_note .title .text, .box_note a.title .text , .box_note a:hover.title .text 
+{
+	color:Blue;
+	font-weight:bold;
+	width:150px;
+	/*margin-left:0px;*/
+	margin:0 auto;
+	text-align:center;
+	
+	padding:5px 0px;
+	font-size:13px;
+	font-family:Tahoma;
+	text-decoration:none;
+	list-style:none;
+}
+.box_note a
+{text-decoration:none}
+.box_note a:hover
+{text-decoration:blink}
+.box_note .content
+{
+	width:inherit;
+	height:38px;
+	border: 1px threedhighlight outset;
+	background-color:threedface;
+	border-top:none;
+	border-bottom:none;
+	/*background:#bebebe url('../Images/boxNote/content_note.png') no-repeat 0px 0px;*/
+	
+}
+.box_note .content .text
+{
+	color:red;
+	font-weight:bold;
+	font-size:30px;
+	line-height:30px;
+	width:160px;
+	margin-left:0px;
+	text-align:center;	
+}
+.box_note .footer
+{
+	width:inherit;
+	height:15px;
+	background:#bebebe url('') no-repeat 0px 0px;
+	border: 1px threedhighlight outset;
+	background-color:threedface;
+	border-top:none;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	
+}

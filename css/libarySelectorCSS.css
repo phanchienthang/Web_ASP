@@ -1,0 +1,90 @@
+﻿._lib-al-c
+{
+    text-align: center !important;
+}
+
+._lib-bg-w
+{
+    background: #fff !important;
+}
+
+._lib-fl-r
+{
+    float: right !important;
+}
+
+._lib-fl-l
+{
+    float: left !important;
+}
+
+._lib-fw-6
+{
+    font-weight: 600 !important;
+}
+
+._lib-bd-bt-none
+{
+    border-bottom: none !important;
+}
+
+._lib-mg-10
+{
+    margin: 10px !important;
+}
+
+._lib-mg-l-10
+{
+    margin-left: 10px !important;
+}
+
+._lib-mg-r-10
+{
+    margin-right: 10px !important;
+}
+
+._lib-mg-t-10
+{
+    margin-top: 10px !important;
+}
+
+._lib-mg-bt-10
+{
+    margin-bottom: 10px !important;
+}
+
+._lib-tx-sup
+{
+    vertical-align: super !important;
+    font-size: 10px !important;
+}
+
+._lib-tx-upper
+{
+    text-transform: uppercase !important;
+}
+
+._lib-tx-underline
+{
+    text-decoration: underline !important;
+}
+
+._lib-tx-center
+{
+    text-align: center !important;
+}
+
+._lib-tx-justify
+{
+    text-align: justify !important;
+}
+
+._lib-tx-italic
+{
+    font-style: italic !important;
+}
+
+.lib_cl-gray17
+{
+    color: #111 !important;
+}

@@ -1,0 +1,64 @@
+﻿* #main_admin
+{
+	width: 960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#main_admin #main_admin_left
+{
+	float: left;
+}
+#main_admin_left #logo_main
+{
+	width: 200px;
+	height: 80px;
+}
+
+#main_admin #main_admin_right
+{
+	float: right;
+	background-image: url(../images/body-repeat-photo.gif);
+	background-repeat: repeat-y;
+	min-height: 100%;
+	height: auto;
+	overflow: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.menu_admin_left ul{
+	 list-style: none;
+	 margin:0;
+	 padding:0;
+}
+.menu_admin_left li a
+{
+	display: block;
+	height: 15px;
+	color: #800000;
+	padding: 2px 0 2px 0;
+	border-bottom: #ccff66 1px solid;
+	border-bottom-color: #FFFFFF;
+}
+
+.menu_admin_left li a:hover
+{
+	color: #CC0000;
+	background-color: #FFFFCC;
+}
+.heard_admin
+{
+	padding-top: 6px;
+	height: 31px;
+	font-family: tahoma;
+	font-size: 22px;
+	font-weight: bold;
+	color: #4684C1;
+	font-variant: normal;
+	text-align: center;
+}
+.buttom_1_admin
+{
+	margin:1px 0 1px 10px;
+}

@@ -1,0 +1,50 @@
+﻿#logout
+{
+	width:250px;
+	height:100%;
+	float:right; margin-top:0px; margin-right:3px; padding:0px 0px;
+	
+}
+#logout .head
+{
+	width:100%; height:16px; margin-top:3px;
+}
+.head .left
+{
+	float:left;
+	width:4px;
+	height:23px;
+	background: url('./Images/logout/head_left.png') no-repeat 0px 0px;
+}
+.head .center
+{
+	width:238px;
+	float:left;
+	height:23px;
+	background: url('./Images/logout/header_bg.png') repeat-x 0px 0px;
+}
+.head .right
+{
+	float:right;
+	width:8px;
+	height:23px;
+	background: url('./Images/logout/head_right.png') no-repeat 0px 0px;
+}
+#logout .content
+{
+	width:100%;
+	height:60px;
+	margin-top:7px;
+	background-color:Green;
+	background: url('./Images/logout/bg_noidung.png') repeat-x 0px 0px;
+	border:0px solid #ff0000;
+}
+.text_date_logout
+{
+	line-height:19px;
+}
+.textID_logout
+{
+	color:Blue;
+	font-weight:bold;
+}
